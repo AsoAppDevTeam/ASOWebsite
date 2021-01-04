@@ -1,0 +1,58 @@
+/* CSS Document */
+body{
+   margin: 0;
+   padding: 0;
+   font-family:  Arial, Helvetica, sans-serif;
+   font-size: 80%; 
+   color:#000000;
+   background-color: #ffffff; 
+   BACKGROUND-POSITION: 0in 0in; 
+   BACKGROUND-REPEAT: repeat;
+
+}
+input{
+color:#eca33c;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+text-decoration:none;
+}
+.content{
+color:#eca33c;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+text-decoration:none;
+}
+.head{
+color:#FFFFFF;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+text-decoration:none;
+font-weight:bold;
+}
+.error{
+color:#eca33c;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+text-decoration:none;
+}
+.textbox{
+color:#eca33c;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+text-decoration:none;
+}
+.submitbutton{
+color:#eca33c;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+text-decoration:none;
+font-weight:bold;
+}
+.adminhead{
+border:1px solid  #D8251D;
+color:#FFFFFF;
+}
+.adminheadtext{
+background-color:#D8251D;
+font-weight:bolder;
+}

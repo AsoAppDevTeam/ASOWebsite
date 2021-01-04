@@ -1,0 +1,410 @@
+<section id="maincontent">
+  <menu>
+    <div id="menu_holder">
+      <ul class="hMenu">
+        <li><a href="../">Home</a></li>
+        <li><a href="#">Exhibition</a>
+          <ul>
+            <li><a href="../exhibit/">What to Expect</a></li>
+            <li><a href="#">Fees &amp; Rates</a>
+              <ul>
+                <li><a href="../exhibit/booth/">Booth Fees</a></li>
+                <li><a href="../exhibit/advert/">Advertisement Rates</a></li>
+                <li><a href="../exhibit/payment/">Payment Details</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sponsorship</a>
+              <ul>
+                <li><a href="../exhibit/benefits/">Sponsorship Benefits</a></li>
+                <li><a href="../sponsors/">2013 Sponsors</a></li>
+                <li><a href="../sponsors/2012/">Past Sponsors</a></li>
+              </ul>
+            </li>
+            <li class="first activeTrail"><a href="#">Register Now</a></li>
+            <li><a href="../exhibit/faqs/">F.A.Q's</a></li>
+            <li><a href="#">Exhibition 2012</a>
+              <ul>
+                <li><a href="../exhibit/2012/exhibitors/">Past Exhibitors</a></li>
+                <li><a href="../exhibit/2012/">Event Pictures/Videos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Conference</a>
+          <ul>
+            <li><a href="../conf/">About the Conference</a></li>
+            <li><a href="../sponsors/">2013 Sponsors</a></li>
+            <li><a href="#">Conference Speakers</a>
+              <ul>
+                <li><a href="../conf/speakers/">2013 Conference Speakers</a></li>
+                <li><a href="../conf/speakers/2012/">Past Conference Speakers</a></li>
+              </ul>
+            </li>
+            <li><a href="../conf/faqs/">F.A.Q's</a></li>
+          </ul>
+        </li>
+        <li><a href="../travel/">Hotel &amp; Travel</a></li>
+        <li><a href="../../mail/contactform.php" target="_blank">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </menu>
+  <article class="asocontent">
+    <img src="../images/exhibition.png" alt="" width="675" height="100">
+    <div class="exhibitcontent">
+      <div style="width:635px; float:left; padding:10px 10px 80px 10px;">
+       <p style="color:#FFF;">Welcome! Please complete the below form to begin the registration process.</p>
+       <p style="color:#FFF;">Click on the next section to continue. A red cross on a section indicates that the section has not been completed correctly and a green check mark indicates a completed section.</p>
+       <p class="whtlink"><a href="../travel/" target="_blank">Please click here to view discounted rates for suggested hotels near ICC</a></p>
+       <?php
+       if (isset($errorMessage)) {
+           if (!empty($errorMessage)) {
+               echo "<p class=\"errorMessage\">$errorMessage</p>\n";
+           }
+       }
+       ?>
+       <div id="formcontent">
+         <div id="navigation">
+           <ul>
+             <li class="selected"><a href="#">Section A</a></li>
+             <li><a href="#">Section B</a></li>
+             <li><a href="#">Section C</a></li>
+             <li><a href="#">Section D</a></li>
+             <li><a href="#">Confirm</a></li>
+           </ul>
+         </div> <!-- end: navigation -->
+         <div id="formwrapper" style="float:left;">
+           <div id="steps">
+             <form id="formElem" name="formElem" action="register.php" method="post">
+               <input type="hidden" name="errors" id="errors" value="0"/>
+               <fieldset class="step" id="step1">
+                 <legend>&nbsp;Contact Information</legend>
+                 <p>
+                   <label>
+                   <input type="radio" name="registra" value="Corporate Entity" id="Corporate Entity">Corporate Entity</label>
+                   <label for="registra">
+                   <input type="radio" name="registra" value="Individual" id="Individual">Individual</label>
+                 </p>
+                 <p>
+                   <label for="username">Full Name</label>
+                   <input id="username" name="username" size="45" />
+                 </p>
+                 <p>
+                   <label for="fulladdress">Full Address</label>
+                   <input id="fulladdress" name="fulladdress" size="45" />
+                 </p>
+                 <p>
+                   <label for="email">Email</label>
+                   <input id="email" name="email" type="email" AUTOCOMPLETE=OFF size="45" />
+                 </p>
+                 <p>
+                   <label for="phone">Phone</label>
+                   <input id="phone" name="phone" AUTOCOMPLETE=OFF size="45" />
+                 </p>
+                 <table width="100%">
+                   <tr>
+                     <td align="left"><b>INDUSTRY</b></td>
+                   </tr>
+                   <tr align="left">
+                     <td>
+                       <label><input type="radio" name="industry" value="Interior Decoration" id="industry_0">Interior Decoration</label>
+                     </td>
+                     <td>
+                       <label><input type="radio" name="industry" value="Construction &amp; Building Material" id="industry_1">Construction &amp; Building Material</label>
+                     </td>
+                     <td>
+                       <label><input type="radio" name="industry" value="Architecture" id="industry_2">Architecture</label>
+                     </td>
+                   </tr>
+                   <tr align="left">
+                     <td>
+                       <label><input type="radio" name="industry" value="Estate Development" id="industry_3">Estate Development</label>
+                     </td>
+                     <td>
+                       <label><input type="radio" name="industry" value="Household" id="industry_4">Household</label>
+                     </td>
+                     <td>
+                       <label><input type="radio" name="industry" value="Quantity Surveyors" id="industry_5">Estate/Quantity Surveyors</label>
+                     </td>
+                   </tr>
+                   <tr align="left">
+                     <td>
+                       <label><input type="radio" name="industry" value="Others" id="industry_6">Others</label>
+                     </td>
+                     <td></td>
+                     <td></td>
+                   </tr>
+                 </table>
+               </fieldset>
+               <fieldset class="step" id="step2">
+                 <legend>Sponsorship</legend>
+                 <div id="boothdisplay">
+                   <div id="nav">
+                     <p align="center"><span class="noformat">Click on a button below to reveal the benefits of each sponsorship level</span></p>
+                     <p><input type="radio" class="sponsoroption" id="free" name="tab" value="pkno">No Thanks</p>
+                     <!--<p><input type="radio" class="sponsoroption" id="silver" name="tab" value="pksilver">Silver Sponsor - N300,000</p>-->
+                     <p><input type="radio" class="sponsoroption" id="diamond" name="tab" value="pkdia">Diamond Sponsor - N1.5 million</p>
+                     <p><input type="radio" class="sponsoroption" id="gold" name="tab" value="pkgold">Gold Sponsor - N750,000</p>    
+                   </div> <!-- end: nav -->
+<?php
+//code to generate lists of booths
+if (!function_exists('pr')) {
+function pr($obj) {
+    echo "<pre>";
+    print_r($obj);
+    echo "</pre>";
+}
+}
+$booths=array(
+    "A1","A2","A3","A4","A5","A6","A7","A8","A9","A10","A11","A12","A13","A14","A15","A16","A17","A18",
+    "B1","B2","B3","B4","B5","B6","B7","B8","B9","B10","B11","B12","B17","B18","B19","B20","B21","B22","B23","B24","B25","B26","B27","B28","B29","B30","B31","B32","B33","B34","B35","B36",
+    "C1","C2","C3","C4","C5","C6","C7","C8","C9","C10","C11","C12","C17","C18","C19","C20","C21","C22","C23","C24","C25","C26","C27","C28","C29","C30","C31","C32","C33","C34","C35","C36",
+    "D1","D2","D3","D4","D5","D6","D7","D8","D9","D10","D11","D12","D13","D14","D15","D16","D17","D18",
+);				
+$sponsoredbooths=array("B13","B14","B15","B16","C13","C14","C15","C16");
+$freebooths=array_diff($booths, $sponsoredbooths);
+
+//create the option dropdowns from these lists, and the map containers
+$freeoptions='';
+$sponsoredoptions='';
+$map='';
+foreach ($freebooths as $index => $val) {
+    $freeoptions .= "<option value=\"$val\">$val</option>\n";
+    $map .= "<div><a class=\"booth $val\" title=\"$val\"></a></div>\n";
+}
+foreach ($sponsoredbooths as $index => $val) {
+    $sponsoredoptions .= "<option value=\"$val\">$val</option>\n";
+    $map .= "<div><a class=\"booth $val double\" title=\"$val\"></a></div>\n";
+}
+?>					 			
+<div id="sel"></div>	   
+                   <div id="boothinterfaces">  
+                    <div id="diamondtext" class="boothinterfacetext">
+                      <ul class="showme ltalign">
+                        <li>Automatic entry of booth visitors in Exhibition Raffle Draw for wonderful House hold items</li>
+                        <li>Free Double Booth in Exhibition Hall</li>
+                        <li>Show case in 30minutes spotlight TV (NTA Channel 5) show during exhibition</li>
+                        <li>I free 15 minutes slot of live Radio program before exhibition at cool FM</li>
+                        <li>30 minutes reserved time slot to present at EXCO learning center</li>
+                        <li>Mention during EXCO talk show on Channels TV(Sunrise) &amp; NTA (AM Express) prior to exhibition</li>
+                        <li>Special Advert display on multimedia screen in exhibition halls</li>
+                        <li>Logo placement in all exhibition Newspaper advertorials</li>
+                        <li>Logo display on multimedia screens in exhibition halls</li>
+                        <li>Prominent and strategic placement of branded banner within venue</li>
+                        <li>2 pages coloured advert in brochure/event material</li>
+                        <li>5 persons breakfast and lunch</li>
+                        <li>4 Invitations to event opening ceremony</li>
+                        <li>Exclusive advert for sponsors in National Newspaper (A week to the event)</li>
+                        <li>Logo placement &amp; product hype on ASO’s social media platform such as: Facebook, Twitter, google plus, Youtube</li>
+                        <li>Logo placement in event brochure and website</li>
+                      </ul>
+                      <p>Click on the required booth to select</p>							
+                    </div>
+                    <div id="goldtext" class="boothinterfacetext">
+                      <ul class="showme ltalign">
+                        <li>Automatic entry of booth visitors in Exhibition Raffle Draw for wonderful House hold items</li>
+                        <li>Free Single Booth in Exhibition Hall</li>
+                        <li>Show case in 30minutes spotlight TV (NTA Channel 5) show during exhibition</li>
+                        <li>20 minutes reserved time slot to present at EXCO learning center</li>
+                        <li>Special Advert display on multimedia screen in exhibition halls</li>
+                        <li>Logo placement in all exhibition Newspaper advertorials</li>
+                        <li>Logo display on multimedia screens in exhibition halls</li>
+                        <li>Prominent and strategic placement of branded banner within venue</li>
+                        <li>1 pages coloured advert in brochure/event material</li>
+                        <li>4 persons breakfast and lunch</li>
+                        <li>3 Invitations to event opening ceremony</li>
+                        <li>Exclusive advert for sponsors in National Newspaper (A week to the event)</li>
+                        <li>Logo placement &amp; product hype on ASO’s social media platform such as: Facebook, Twitter, google plus, Youtube</li>
+                        <li>Logo placement in event brochure and website</li>
+                      </ul>	
+                      <p>Click on the required booth to select</p>						
+                    </div>
+                    
+                    <div class="clearfix"></div>                   
+                     <div class="mapcontainer">						
+                        <div class="image_map"><?=$map;?></div>						
+                     </div>	
+                     <div class="clearfix"></div>
+                        <div id="freeinterface" class="boothinterface">
+                            <h1>Booth Selection</h1>
+                            <select name="freebooths" id="freebooths">
+                            <option value="0">Select A Booth:</option>
+                            <?=$freeoptions;?>
+                            </select>
+                            <select id="free2ndbooth" name="free2ndbooth" style="visibility: hidden; margin-left:10px;">
+                            <option value="0">Select 2nd Booth (optional)</option>
+                            <?=$freeoptions;?>
+                            </select>
+                            <p id="freeaddanother" style="text-align:center;">Add another booth (optional)&nbsp;&nbsp;<img src="../../resources/img/icons/plus.png" width="20" height="20" id="btnShowHide" value="Show/Hide" onclick="showControls('remove');" style="cursor:pointer; vertical-align:text-top;" /></p>
+                            <p id="freeremoveanother" style="visibility:hidden; margin-top:-50px; text-align:center;">Remove 2nd booth&nbsp;&nbsp;<img src="../../resources/img/icons/minus.png" width="20" height="20" id="btnShowHide" value="Show/Hide" onclick="removesecondbooth(); showControls('add');" style="cursor:pointer; vertical-align:text-top;" /></p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="diamondinterface" class="boothinterface">
+                            <h1>Booth Selection</h1>
+                            <select name="diamondbooths" id="diamondbooths">
+                            <option value="0">Select A Booth</option>
+                            <?=$sponsoredoptions;?>
+                            </select>
+                            <select name="dia2ndbooth" id="dia2ndbooth" style="visibility:hidden; margin-left:10px;">
+                            <option value="0">Select 2nd Booth (optional)</option>
+                            <?=$freeoptions;?>
+                            </select>
+                            <p id="diaaddanother" style="text-align:center;">Add another booth (optional)&nbsp;&nbsp;<img src="../../resources/img/icons/plus.png" width="20" height="20" id="btnShowHide" value="Show/Hide" onclick="showControls('remove');" style="cursor:pointer; vertical-align:text-top;" /></p>
+                            <p id="diaremoveanother" style="visibility:hidden; margin-top:-50px; text-align:center;">Remove 2nd booth&nbsp;&nbsp;<img src="../../resources/img/icons/minus.png" width="20" height="20" id="btnShowHide" value="Show/Hide" onclick="removesecondbooth(); showControls('add');" style="cursor:pointer; vertical-align:text-top;" /></p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="goldinterface" class="boothinterface">
+                            <h1>Booth Selection</h1>
+                            <select name="goldbooths" id="goldbooths">
+                            <option value="0">Select A Booth</option>
+                            <?=$freeoptions;?>
+                            </select>
+                            <select id="gld2ndbooth" name="gld2ndbooth" style="visibility: hidden; margin-left:10px;">
+                            <option value="0">Select 2nd Booth (optional)</option>
+                            <?=$freeoptions;?>
+                            </select>
+                            <p id="gldaddanother" style="text-align:center;">Add another booth (optional)&nbsp;&nbsp;<img src="../../resources/img/icons/plus.png" width="20" height="20" id="btnShowHide" value="Show/Hide" onclick="showControls('remove');" style="cursor:pointer; vertical-align:text-top;" /></p>
+                            <p id="gldremoveanother" style="visibility:hidden; text-align:center; margin-top:-50px;">Remove 2nd booth&nbsp;&nbsp;<img src="../../resources/img/icons/minus.png" width="20" height="20" id="btnShowHide" value="Show/Hide" onclick="removesecondbooth(); showControls('add');" style="cursor:pointer; vertical-align:text-top;" /></p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div> <!-- end boothinterfaces -->
+                </div> <!-- end: tabs -->
+              </fieldset>
+              <fieldset class="step" id="step3">
+                <legend>Advert Placement In Event Brochure</legend>
+                <p align="left">Advert spaces in the brochure will be allocated based on availability, on a first-come first-serve basis.</p>
+                <p><input type="checkbox" name="advert[]" value="none" id="nothanks" CHECKED onclick="checkAdverts('nothanks');">No Thanks</p>
+                <table width="100%">
+                  <tr style="font-weight:bold; text-decoration:underline;">
+                    <td width="40%" align="left">Position</td>
+                    <td width="20%">Rate</td>
+                    <td width="40%" align="center">Advert Selection</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Inside Front Cover</td>
+                    <td>N150,000</td>
+                    <td align="center"><input type="checkbox" name="advert[]" value="InsideFrontCover" id="InsideFrontCover" onclick="checkAdverts();"></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Inside Back Cover</td>
+                    <td>N150,000</td>
+                    <td align="center"><input type="checkbox" name="advert[]" value="InsideBackCover" id="InsideBackCover" onclick="checkAdverts();"></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Outside Back Cover</td>
+                    <td>N180,000</td>
+                    <td align="center"><input type="checkbox" name="advert[]" value="OutsideBackCover" id="OutsideBackCover" onclick="checkAdverts();"></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Center Spread</td>
+                    <td>N200,000</td>
+                    <td align="center"><input type="checkbox" name="advert[]" value="CenterSpread" id="CenterSpread" onclick="checkAdverts();"></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Inside Page</td>
+                    <td>N100,000</td>
+                    <td align="center"><input type="checkbox" name="advert[]" value="InsidePage" id="InsidePage" onclick="checkAdverts();"></td>
+                  </tr>
+                </table>
+                <p align="left"><b><u>PLEASE NOTE:</u></b> Soft Copies (on flash or CD preferably .jpeg, .png or Corel) should be delivered to the Corporate Management Department at the ASO Head Office or emailed to <span class="redlink"><a href="mailto:corporatemgt@asoplc.com">corporatemgt@asoplc.com</a></span>, on or before March 28th 2013.</p>
+              </fieldset>
+              <fieldset class="step" id="step4">
+                <legend>&nbsp;Exhibition Booth</legend>
+                <p><input name="registration" type="checkbox" disabled value="registration" checked><b>REGISTRATION FEE OF N120,000.00 ONLY</b></p> <p align="left">(Includes cost of a 3m x 3m booth, breakfast, lunch and conference pack). THE BOOTHS WILL BE ALLOCATED ON A FIRST COME FIRST SERVE BASIS. (Please note: Diamond and Gold sponsors get free booths. See <span class="redlink"><a href="../exhibit/benefits/">Sponsorship Benefits</a></span>)</p>
+                <p>This fee is excluded for Diamond and Gold sponsorship.</p>
+              </fieldset>
+              <fieldset class="step" id="step5">
+                <legend>Confirm</legend>
+                  <p align="left">A green checkmark icon indicates that the form is correctly completed. A red checkmark icon indicates that some fields are missing or filled out with invalid data. Once complete, please select SUBMIT to receive your CONFIRMATION number.</p>
+                  <p align="left" id="registerTotal">
+                     Registration Total: <span id="regtotal"></span>
+                  </p>
+                  <p>
+                   <label for="vendorcode">Vendor Code (optional)</label>
+                   <input id="vendorcode" name="vendorcode" size="45" />
+                  <p class="submit">
+                    <button id="registerButton" type="submit">Register</button>
+                  </p>
+                </fieldset>
+                <fieldset class="step"></fieldset>
+              </form>
+            <div class="clearfix"></div> <!-- end: clearfix -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end: exhibitcontent -->
+  </article>
+  <div class="socialnetwork">
+    <a href="https://www.facebook.com/asoplc" class="network fb" rel="tooltip" title="Facebook" target="_blank"></a>
+    <a href="https://twitter.com/ASO_SAVINGS" class="network twitter" rel="tooltip" title="Twitter" target="_blank"></a>
+    <a href="https://plus.google.com/u/0/b/106126146711350910477/106126146711350910477/posts" class="network gplus" rel="tooltip" title="Google+" target="_blank"></a>
+    <a href="https://www.linkedin.com/company/aso-savings-&-loans-plc" class="network in" rel="tooltip" title="LinkedIn" target="_blank"></a>
+    <a id="mail" href="../javascript_required" class="network email" rel="tooltip" title="Email"></a>
+  </div> <!-- end: socialnetwork -->
+  <div class="clearfix"></div> <!-- end: clearfix -->
+  <script type="text/javascript" src="../../scripts/includes/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    function toggleVisibility(controlId) {
+        var control = document.getElementById(controlId);            
+        if(control.style.visibility == "visible" || control.style.visibility == "")                 
+        control.style.visibility = "hidden";            else                 
+        control.style.visibility = "visible";
+    }
+
+    function hideme(controlId) {
+        var control = document.getElementById(controlId);            
+        if(control.style.visibility == "visible" || control.style.visibility == "")                 
+        control.style.visibility = "hidden";            else                 
+        control.style.visibility = "hidden";
+    }
+
+    function showme(controlId) {
+        var control = document.getElementById(controlId);            
+        if(control.style.visibility == "visible" || control.style.visibility == "")                 
+        control.style.visibility = "visible";            else                 
+        control.style.visibility = "visible";
+    }
+  
+      (function(){
+        var tabs =document.getElementById('tabs');
+        if (!tabs) return;
+        var nav = tabs.getElementsByTagName('input');
+        /** Hide all tabs **/
+        function hideTabs(){
+          var tab = tabs.getElementsByTagName('div');
+          for(var i=0;i<=nav.length;i++){
+            if(tab[i].className == 'tab'){
+              tab[i].className = tab[i].className + ' hide';
+            }
+          }
+        }
+  
+        /** Show the clicked tab **/
+        function showTab(tab){
+          document.getElementById(tab).className = 'tab'
+        }
+        hideTabs(); /* hide tabs on load */
+        /** Add click events **/
+        for(var i=0;i<nav.length;i++){
+          nav[i].onclick = function(){
+          hideTabs();
+          showTab(this.className);
+        }
+      }
+    })();
+  </script>
+  <script type="text/javascript" src="../../scripts/includes/sliding.form.js"></script>
+  <script type="text/javascript" src="../../scripts/includes/register.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28605460-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+  </script>
+</section>

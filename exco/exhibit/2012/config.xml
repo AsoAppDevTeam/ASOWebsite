@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<MultimediaGallery>
+  <file type="video">
+    <thumb>media/videos/thumbs/video1.jpg</thumb>
+	<source>http://www.youtube.com/watch?v=gnFyu50hZEE</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic1.jpg</thumb>
+	<source>media/photos/pic1.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic2.jpg</thumb>
+	<source>media/photos/pic2.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic3.jpg</thumb>
+	<source>media/photos/pic3.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic4.jpg</thumb>
+	<source>media/photos/pic4.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic5.jpg</thumb>
+	<source>media/photos/pic5.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic6.jpg</thumb>
+	<source>media/photos/pic6.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic7.jpg</thumb>
+	<source>media/photos/pic7.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic8.jpg</thumb>
+	<source>media/photos/pic8.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic9.jpg</thumb>
+	<source>media/photos/pic9.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic10.jpg</thumb>
+	<source>media/photos/pic10.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic11.jpg</thumb>
+	<source>media/photos/pic11.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic12.jpg</thumb>
+	<source>media/photos/pic12.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic13.jpg</thumb>
+	<source>media/photos/pic13.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic14.jpg</thumb>
+	<source>media/photos/pic14.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic15.jpg</thumb>
+	<source>media/photos/pic15.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic16.jpg</thumb>
+	<source>media/photos/pic16.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic17.jpg</thumb>
+	<source>media/photos/pic17.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 1</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic18.jpg</thumb>
+	<source>media/photos/pic18.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 2</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic19.jpg</thumb>
+	<source>media/photos/pic19.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 2</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic20.jpg</thumb>
+	<source>media/photos/pic20.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 2</description>
+  </file>
+  <file type="photo">
+    <thumb>media/photos/thumbs/pic21.jpg</thumb>
+	<source>media/photos/pic21.jpg</source>
+	<description>2nd ASO National Housing Exhibition - Day 2</description>
+  </file>
+</MultimediaGallery>

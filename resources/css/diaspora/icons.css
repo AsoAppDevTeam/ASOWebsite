@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'brick';
+	src:url('../../fonts/brick.eot?-jwyjr1');
+	src:url('../../fonts/brick.eot?#iefix-jwyjr1') format('embedded-opentype'),
+		url('../../fonts/brick.woff?-jwyjr1') format('woff'),
+		url('../../fonts/brick.ttf?-jwyjr1') format('truetype'),
+		url('../../fonts/brick.svg?-jwyjr1#brick') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'brick';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shower:before {
+	content: "\e600";
+}
+.icon-house:before {
+	content: "\e601";
+}
+.icon-garage:before {
+	content: "\e602";
+}
+.icon-bed:before {
+	content: "\e603";
+}

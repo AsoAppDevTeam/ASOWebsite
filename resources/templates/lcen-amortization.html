@@ -1,0 +1,226 @@
+    <div class="main">
+      <div class="breadcrumb">
+        <a href="../../../">return to homepage</a> > <a href="../../">Learning Centre</a>
+      </div> <!-- end: breadcrumb -->
+      <div class="mainpagecontent">
+        <div class="contentwrapper">
+          <div class="pagehead">
+            <div class="pageheadinner">
+              Loan Amortization Calculator
+            </div> <!-- end: pageheadinner -->
+          </div> <!-- end: pagehead -->
+          <menu>
+            <ul class="slideMenu">
+              <li><a href="#">Learning Centre</a>
+                <ul>
+                  <li><a href="../../">Home</a></li>
+                  <li><a href="#">A to Z on Mortgages</a>
+                    <ul>
+                      <li><a href="../../a2z/">Mortgages In Nigeria</a></li>
+                      <li><a href="../../a2z/mortgageprocess/">General Mortgage Steps</a></li>
+                      <li><a href="../../a2z/housetypes/">House Types</a></li>
+                      <li><a href="../../a2z/glossary/">Mortgage Glossary</a></li>
+                      <li><a href="../../a2z/credit/">Credit Scoring</a></li>
+                      <li><a href="../../a2z/faqs/">F.A.Qs</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Getting Started</a>
+                    <ul>
+                      <li><a href="../../gettingstarted/">ASO Mortgage Process</a></li>
+                      <li><a href="../../../products/myresidential/">Select ASO Mortgages</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Mortgage Calculators</a>
+                    <ul>
+                      <li><a href="../">How much can I borrow?</a></li>
+                      <li><a href="../payment/">Payment Calculator</a></li>
+                      <li class="first activeTrail"><a href="#">Amortization Calculator</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="http://mls.asoplc.com/" target="_blank">Find My Dream Home</a></li>
+                </ul>
+              </li>
+            </ul>
+          </menu>
+          <div class="asomain">
+            <div class="simpleLoan" id="Calc1">
+              <div id="Calc1Left">
+                <form name="calc" action="">
+                  <h1>Loan Amortization Calculator</h1>
+                  <p class="smlsize">Amortization is the gradual reduction of a debt over a given period. Our amortization calculator will amortize (show the reduction) your debt (such as a mortgage) and display your payment breakdown of interest paid, principal paid, and loan balance over the life of the loan.</p>
+                  <div id="compareRates">
+                    <table class="compareTable" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td class="stepTD">1.</td>
+                          <td class="titleTD">Loan Amount</td>
+                          <td class="inputTD">-N- <input id="loanVal" onKeyPress="return handleEnterKey(event,'amortization');" type="text" size="10"></td>
+                        </tr>
+                        <tr>
+                          <td class="stepTD">2.</td>
+                          <td class="titleTD">Interest Rate</td>
+                          <td class="inputTD" style="padding-left: 25px;"><input id="rateVal" onkeypress="return handleEnterKey(event, 'amortization');" type="text" size="10"> %</td>
+                        </tr>
+                        <tr>
+                          <td class="stepTD">3.</td>
+                          <td class="titleTD">Number of Years</td>
+                          <td class="inputTD" style="padding-left: 25px;"><input id="monthVal" onkeypress="return handleEnterKey(event, 'amortization');" type="text" size="10"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a class="png" id="loanCalculate" onClick="amortization(); return false" href="#">Calculate</a>
+                  </div>
+                </form>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="Calc2">
+              <h1 style="padding-bottom:15px; margin-left:20px;">Your Amortization Summary</h1>
+              <table class="loanCalcTable" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <th width="150" style="text-align:left; padding-left:5px;">Total Interest Paid</th>
+                    <th width="250">Monthly Principal &amp; Interest</th>
+                    <th width="150">Number of Payments</th>
+                    <th width="140">Total Payments</th>
+                  </tr>
+                  <tr>
+                    <td width="150" style="text-align:left; color:rgb(0,0,0); padding-left:5px; font-size:12px;">Base Calculations</td>
+                    <td width="190" id="colAmountBox"> - </td>
+                    <td width="150" id="colInterestBox"> -</td>
+                    <td width="140" id="colYearsBox"> -</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="loanCalcTableResult" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <th>Original Loan Amount</th>
+                  </tr>
+                  <tr>
+                    <td id="payVal" valign="middle">Use calculator above <br>to find loan amount needed</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="clear"></div>
+              <div class="addtlInfo">
+                <h1 style="padding-bottom:15px; margin-left:20px;">Additional Amortization Information</h1>
+                <div id="loanAmortizationChartStatic">
+                  <img alt="Loan Amortization Chart" src="../../../resources/img/icons/amortizationInactive.png">
+                  <p>This chart illustrates how balances decrease over time for a fixed rate mortgage.</p>
+                </div>
+                <div id="principalPaymentChartStatic">
+                  <img alt="Principal Payment Chart" src="../../../resources/img/icons/principalInactive.png"> 
+                  <p>This chart shows how payments are split between principle and interest payments over time.</p>
+                </div>
+                <div id="loanAmortizationChart" style="display:none;">
+                  <div id="BalChart" style="width:410px; height:300px;"></div>
+                  <p>Click on the chart to see how balances decrease over time for a fixed rate mortgage.</p>
+                </div>
+                <div id="principalPaymentChart" style="display:none;">
+                  <div id="PrincipleChart" style="width:410px; height:300px;"></div>
+                  <p>Click on the chart to see how payments are split between principle and interest payments over time.</p>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div id="fullAmortizationSchedule">
+                <h1 style="padding-bottom:15px; margin-left:20px;">Your full amortization schedule</h1>
+                <table class="loanCalcTable variations" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <th width="180" style="text-align:left; padding-left:5px;">Month/Year</th>
+                      <th width="150">Payment Amount</th>
+                      <th width="150">Interest Paid</th>
+                      <th width="150">Principal Paid</th>
+                      <th width="7" style="border:currentColor; background-color:rgb(255,255,255);">&nbsp;</th>
+                      <th width="170">Mortgage Balance</th>
+                    </tr>
+                    <tr id="amortizationNote">
+                      <td valign="middle" colspan="6">Use calculator above to see your full amortization schedule</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="scrollable" id="scrollableDiv" style="float:left; display:none;">
+                  <table class="loanCalcTable variations" id="fullTable" border="0" cellspacing="0" 
+cellpadding="0"></table>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div> <!-- end: asomain -->	
+        </div> <!-- end: contentwrapper -->	  
+        <div class="asoshade gradient">	
+          <div class="insideshadow">&nbsp;
+          </div> <!-- end: insideshadow -->
+        </div> <!-- end: asoshade -->
+        <div class="asoside">
+          <div id="newsletter">
+            <a href="../../../mls/" target="_blank"><img src="../../../resources/img/icons/asomls.png" alt=""></a>
+          </div> <!-- end: newsletter -->
+          <div class="quicklinks">
+            <script type="text/javascript">
+              <!--
+              function parseNavigation(ob) {
+                toBeBrokenDown = ob.options[ob.selectedIndex].value.split("|");
+      
+                targetWindow = toBeBrokenDown[0];
+                targetURL    = toBeBrokenDown[1];
+      
+                if (targetWindow!=='') {
+                  window.open(targetURL,targetWindow,'toolbar=1,location=1,directories=1,status=1,menubar=1,scrollbars=1,resizable=1,width=400,height=300');
+                  ob.selectedIndex = 0;
+                } else {		
+                  window.open(targetURL,'_top')
+                }
+              }
+              //-->
+            </script>
+            <form name="form" id="form" action="">
+              <select class="searchfont" onchange="parseNavigation(this)" style="width:230px; padding:2px;">
+                <option selected="selected">Quick Links</option>
+                <option value="|http://www.asoplc.com/company/">About ASO</option>
+                <option value="|http://www.asoplc.com/exco/">ASO Exhibition &amp; Conference 2013</option>
+                <option value="|http://www.asoplc.com/products/myhouse/">ASO MyHouse Account</option>
+                <option value="|http://www.asoplc.com/products/faqs/">Individual Banking F.A.Q</option>
+                <option value="|http://www.asoplc.com/products/myhousepurchase/">MyHouse Purchase Program</option>
+                <option value="|http://www.asoplc.com/products/myresidential/">MyResidential Mortgage Loan</option>
+                <option value="|http://www.asoplc.com/products/mybusiness/">MyBusiness Mortgage</option>
+                <option value="|http://www.asoplc.com/learningcentre/calculators/">ASO Affordability Calculator</option>
+                <option value="|http://www.asoplc.com/learningcentre/calculators/payment/">ASO Payment Calculator</option>
+                <option value="|http://www.asoplc.com/learningcentre/calculators/amortization/">ASO Amortization Calculator</option>
+                <option value="|http://www.asoplc.com/products/faqs/homefinance/">Home Finance F.A.Q</option>
+                <option value="|http://www.asoplc.com/products/faqs/business/">Business Banking F.A.Q</option>
+                <option value="|http://www.asoplc.com/products/mobile/">E-Banking Solutions</option>
+                <option value="|http://www.asoplc.com/learningcentre/a2z/mortgageprocess/">General Mortgage Steps</option>
+                <option value="|http://mls.asoplc.com/Property">Available Properties</option>
+                <option value="|http://www.asoplc.com/mail/whistleblowerform.php">ASO Whistleblower Form</option>
+              </select>
+            </form>
+          </div> <!-- end: quicklinks -->
+          <div class="infoheader">
+            <img src="../../../resources/img/newinfoheaders/ad9.png" alt="">
+          </div> <!-- end: infoheader -->
+        </div> <!-- end: asoside -->
+      </div> <!-- end: mainpagecontent -->
+      <script type="text/javascript" src="../../../scripts/includes/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript" src="../../../exco/scripts/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="../../../scripts/includes/del/common.js"></script>
+      <script type="text/javascript" src="../../../scripts/includes/del/analytics.js"></script>
+      <script type="text/javascript" src="../../../scripts/includes/del/calculators.js"></script>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28605460-1']);
+        _gaq.push(['_trackPageview']);
+  
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  
+         })();
+      </script>
+    </div> <!-- end: main -->
+  </div> <!-- end: asom -->
+  <div class="asor"></div> <!-- end: asor -->
+  <div class="clearfix"></div> <!-- end: clearfix -->
+</div> <!-- end: content -->

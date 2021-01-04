@@ -1,0 +1,21 @@
+.topshadow {
+	position: absolute;
+	top: 260px;
+	display: block;
+	height: 100%;
+	min-height: 100%;
+	width: 10px;	
+	background:url('../img/global/mid_shadow_top.png') 0 0 no-repeat;	
+	border: 2px solid cyan;	
+	z-index: 30;
+}
+
+.bottomshadow {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	width:10px;
+	height:100px;
+	background: url('../img/global/mid_shadow_bottom.png') bottom left no-repeat;
+	z-index: 50;
+}

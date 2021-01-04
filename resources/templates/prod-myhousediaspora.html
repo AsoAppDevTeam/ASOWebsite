@@ -1,0 +1,115 @@
+    <div class="main">
+      <div class="breadcrumb">
+        <a href="../">return to homepage</a> > <a href="../products">Our Products</a>
+      </div> <!-- end: breadcrumb -->
+      <div class="mainpagecontent">
+        <div class="contentwrapper">
+          <div class="pagehead">
+            <div class="pageheadinner">
+              Home Finance 
+            </div> <!-- end: pageheadinner -->
+          </div> <!-- end: pagehead -->
+          <div class="asomainlong">
+            <p style="text-align:center;">Launching in November 2014</p>
+            <p style="text-align:center;">Please mail all completed forms to:</p>
+            <p style="text-align:center;">c/o Diaspora Mortgages,<br>145-157 St. John's Street,<br>London<br>EC1V 4PW</p>
+          </div> <!-- end: asomain -->	
+        </div> <!-- end: contentwrapper -->	  
+        <div class="asoshade gradient">	
+          <div class="insideshadow">&nbsp;
+          </div> <!-- end: insideshadow -->
+        </div> <!-- end: asoshade -->
+        <div class="asoside" style="padding-top:92px;">
+        
+        </div> <!-- end: asoside -->
+      </div> <!-- end: mainpagecontent -->
+      <link href="../resources/css/flexslider.css" rel="stylesheet" type="text/css">
+      <link href="../resources/css/myhouse.css" rel="stylesheet" type="text/css">
+      <link href="../resources/css/owl.carousel.css" rel="stylesheet" type="text/css">
+      <link href="../resources/css/owl.theme.css" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="../scripts/includes/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript" src="bootstrap.min.js"></script>
+      <script type="text/javascript" src="../scripts/includes/jquery.flexslider-min.js"></script>
+      <script src="../scripts/includes/select.min.js" type="text/javascript"></script>
+      <script type="text/javascript" src="../scripts/includes/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="../scripts/includes/flex-script.js"></script>
+      <script type="text/javascript">
+        function formValidation() {
+          var c_name=document.forms["houseform"]["name"].value;
+          if (c_name==null || c_name=="") {
+              alert("Please enter your name");
+              return false;
+          }
+          
+          var x=document.forms["houseform"]["email"].value;
+          var atpos=x.indexOf("@");
+          var dotpos=x.lastIndexOf(".");
+          if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+              alert("Please ensure your email is correct");
+              return false;
+          } 
+          
+          var c_phone=document.forms["houseform"]["phone"].value;
+          if (c_phone==null || c_phone=="") {
+              alert("Please enter your phone number");
+              return false;
+          } 
+        }
+      </script>
+      <script>
+        function namedata(data) {
+            if(data=='A') {
+                $('#diva').css('display','block');
+                $('#divb').css('display','none');
+                $('#divc').css('display','none');
+                $('#divd').css('display','none');
+                $('#dive').css('display','none');
+            }
+            else if(data=='B') {
+                $('#diva').css('display','none');
+                $('#divb').css('display','block');
+                $('#divc').css('display','none');
+                $('#divd').css('display','none');
+                $('#dive').css('display','none');
+            }
+            else if(data=='C') {
+                $('#diva').css('display','none');
+                $('#divb').css('display','none');
+                $('#divc').css('display','block');
+                $('#divd').css('display','none');
+                $('#dive').css('display','none');
+            }
+            else if(data=='D') {
+                $('#diva').css('display','none');
+                $('#divb').css('display','none');
+                $('#divc').css('display','none');
+                $('#divd').css('display','block');
+                $('#dive').css('display','none');
+            }
+            else if(data=='E') {
+                $('#diva').css('display','none');
+                $('#divb').css('display','none');
+                $('#divc').css('display','none');
+                $('#divd').css('display','none');
+                $('#dive').css('display','block');
+            }
+        }
+      </script>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28605460-1']);
+        _gaq.push(['_trackPageview']);
+  
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  
+         })();
+
+      </script>
+    </div> <!-- end: main -->
+  </div> <!-- end: asom -->
+  <div class="asor"></div> <!-- end: asor -->
+  <div class="clearfix"></div> <!-- end: clearfix -->
+</div> <!-- end: content -->

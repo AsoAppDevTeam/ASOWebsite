@@ -1,0 +1,428 @@
+@media (max-width: 1500px) {
+	.nav-holder.style-3{ padding: 0 30px;}
+	.nav-holder.style-3 .logo{ margin: 15px 40px 0 0;}
+	.nav-holder.style-3 .nav-list li{ margin: 0 0 0 20px;}
+	.countdown li{ padding: 0 32px;}
+	.countdown li span{ font-size: 40px; line-height: 20px;}
+	.time-acounter{ bottom: 50px;}
+
+	.previous-videos .caption h2{ font-size: 50px; line-height: 20px;}
+	.previous-videos .caption h3{ font-size: 30px; line-height: 35px;}
+	.previous-videos .caption h4{ font-size: 16px;}
+
+	.nav-holder.style-3 .logo{ margin: 0;}
+	.nav-holder.style-3 .btn.custom{ display: none;} 
+}
+
+@media (max-width: 1400px) {
+	.caption h1{ font-size: 40px; line-height: 40px;}
+	.caption h1 i{ font-size: 40px;}
+	.caption h1 i sup{ font-size: 30px;}
+	.previous-videos .caption h2 span sup{ font-size: 30px;}	
+	.caption h2{ font-size: 16px;}
+	.location-list ul li{ font-size: 20px;}
+
+	.team::after{ height: 277px;}
+
+	.countdown li span{ font-size: 80px;}
+
+	.nav-holder .nav-list li{ margin: 0 0 0 20px;}
+
+	.previous-videos .caption{ right: 90px; width: 70%;}
+	.previous-videos .caption h2{ font-size: 40px; line-height: 30px;}
+	.previous-videos .caption h2 span{ display: inline-block; font-size: 40px;}	
+	.previous-videos .caption h2 span sup{ line-height: 30px;}
+	.previous-videos .caption h3{ font-size: 30px; line-height: 30px;}
+	.previous-videos .caption h4{ font-size: 14px;}
+
+	.countdown li{ font-size: 17px;}
+	.countdown li span{ font-size: 50px;}
+}
+
+@media (max-width: 1199px) {
+	.previous-videos .caption{ right: 70px; width: 70%;}
+
+	.welcome-text article q{ font-size: 15px;}
+	.welcome-text article p{ font-size: 13px; line-height: 20px;}
+
+	.schedules-widget h3{ font-size: 18px;}
+	.schedules-widget p{ font-size: 11px;}
+
+	.prcing .detail{ padding: 30px 30px 30px 110px;}
+	.prcing .detail ul li{ font-size: 13px;}
+	.reserve-btn .btn{ min-width: 100px;}
+	.reserve-btn select{ padding: 0 15px;}
+
+	.address-widget p{ font-size: 13px;}
+
+	.caption h1{ font-size: 25px;}
+	.caption h1 span{ display: block; font-size: 20px; line-height: 20px;}
+	.caption h1 i sup{ font-size: 20px;}
+	.location-list ul li{ font-size: 14px;}
+	.location-list ul li i{ font-size: 14px;}
+
+	.btn{ font-size: 14px; height: 40px; line-height: 38px; min-width: 124px; padding: 0 20px;}
+	.btn.light{ line-height: 35px;}
+	.btn.sm.light{ line-height: 27px;}
+	.caption{ width: 100%;}
+	.team::after{ height: 240px;}
+
+	.event-img-list.style-2{ margin: 32px 0 0;}
+	.welcome-img.style-2{ padding: 0;}
+	.team::after{ height: 270px;}
+
+	.previous-videos .caption h1 span sup{ font-size: 28px;}
+	.previous-videos .caption h2{ font-size: 20px; line-height: 20px;}
+
+	.program-4 .schedules-tab-nav li{ min-width: 134px;}
+	.news-post .detail h3{ font-size: 20px;}
+
+	.testimonial-slider li p{ font-size: 20px;}
+
+	.soon-content h1{ font-size: 30px;}
+	.soon-content h3{ font-size: 14px;}
+}
+
+@media (max-width: 1024px) {
+	.team::after{ height: 240px;}
+	.team-figure figcaption h4{ font-size: 18px;}
+	.news-post .detail h3{ font-size: 18px;}
+
+	.nav-holder.style-3 .search-bar{ display: none!important;}
+	.previous-videos .caption h2{ font-size: 40px; line-height: 30px; margin: 0 0 10px;}
+	.previous-videos .caption h2 span{ display: inline-block; font-size: 40px;}	
+	.previous-videos .caption h2 span sup{ line-height: 30px;}
+	.previous-videos .caption h3{ font-size: 30px; line-height: 30px; margin: 0 0 10px;} 
+	.previous-videos .caption h4{ font-size: 14px; margin: 0 0 10px; line-height: 20px;}
+
+	.time-acounter{ width: 100%!important; text-align: center;}
+	.time-acounter ul{ display: inline-block!important;}
+}
+
+@media (max-width: 991px) {
+	.top-right .tc-social-icons{ display: none;}
+	.address-list{ margin: 0 30px 0 0;}
+	.address-list li{ font-size: 12px;}
+	.none-991{ display: none;}
+
+	.nav-holder.style-3{ padding: 20px 30px;}
+
+	.active{ display: block;}
+	.nav-list{ position: absolute; background: #222; margin: 0!important; width: 100%; left: 0; top: 122%;}
+    .nav-list li{ float: none!important; margin: 0!important;}
+    .nav-list > li > a{ padding: 10px 30px!important; color: #fff!important; border-bottom: 1px solid rgba(255,255,255,0.1);} 
+    .nav-list > li:last-child > a{ border: 0;}
+   	.nav-list > li.hover > ul , .nav-list li li.hover ul { position: static; visibility: visible; opacity: 1;}
+	.nav-list > li > ul , .nav-list li li ul{ width: 100%; left: 0;}
+
+   	.welcome-text .welcome-title i{ font-size: 30px; line-height: 30px;}
+   	.welcome-text h2{ font-size: 30px;}
+   	.welcome-text h2 span{ font-size: 40px;}
+   	.time-location li{ font-size: 11px; margin: 0 20px 0 0;}
+
+   	.sponsers-slider-holder .sponsers-title{ padding: 30px 15px;}
+   	.break-widget .title h2, .break-widget .time h2{ font-size: 20px;}
+
+   	.accomodations-slider{ margin: 40px 0 0;}
+   	.accomodations-slider li img{ width: 100%;}
+
+   	.sub-footer p{ font-size: 12px;}
+   	.footer-logo p{ font-size: 14px;}
+
+   	.r-search{ display: block; margin: 0;}
+   	.none-991{ display: none;}
+   	.nav-holder.style-2 .toggleMenu{ float: left;}
+   	.welcome-text article p:last-child{ display: none;}
+
+   	.program-4 .schedules-tab-nav li{ min-width: 95px;}
+   	.schedules-tab-nav ul li a{ font-size: 18px; padding: 15px 15px;}
+   	.schedules-tab-nav ul li a span{ font-size: 12px;}
+   	.tab-content{ padding: 30px 20px;}
+   	.schedules-widget::before{ width: 75.7%;}
+
+   	.news-post .detail h3{ font-size: 15px;}
+
+   	.nav-holder.style-3 .dropdowns{ padding: 0; float: right;}
+	.nav-holder.style-3 .dropdowns .toggleMenu{ margin: 0 0 0 20px; padding: 7.3px 20px;}
+	.countdown li{ padding: 0 17px;}
+
+	.hotel-view .detail h3{ font-size: 18px;}
+
+	.aside-widget h3{ font-size: 18px;}
+	.news-post figure iframe{ height: 310px;}
+
+	.post-detail article blockquote::before{ top: 40px; left: 20px;}
+	.post-detail article blockquote{ font-size: 14px; padding: 30px 30px 30px 130px;}
+
+	.contact.style-2 .contact-map{ height: 370px;}
+
+	.team-figure figcaption h5{ font-size: 11px;}
+
+	.speaker-detail p{ font-size: 12px;}
+	.address-list.style-2{ margin: 0 0 32px;}
+
+	.nav-nd-search .search-bar{ margin: 0;}
+	.nav-nd-search{ padding: 10px 0;}
+
+	.custom-padding{ padding: 0!important;}
+	.logo{ padding: 0!important;}
+
+	.previous-videos .caption h2{ font-size: 40px; line-height: 30px; margin: 0 0 10px;}
+	.previous-videos .caption h2 span{ display: inline-block; font-size: 40px;}	
+	.previous-videos .caption h2 span sup{ line-height: 30px;}
+	.previous-videos .caption h3{ font-size: 20px; line-height: 24px; margin: 0 0 10px;} 
+	.previous-videos .caption h4{ font-size: 14px; margin: 0 0 10px; line-height: 20px;}
+
+	.prcing.style-1{ margin: 30px 0; position: relative;}
+	.pricing-title h2{ font-size: 30px;}
+	.pricing-title h2 i{ font-size: 20px;}
+	.prcing.style-1 .detail{ padding: 30px 30px 30px 30px;}
+	.prcing.style-1 .pricing-img{ height: 100px; width: 100px; right: 10px; left: auto; top: -30px;}
+	.prcing.style-1 .detail h3{ font-size: 16px;}
+
+	.instagram-slider li a::before{ border-width: 145px 145px 0 0;}
+	.display-991{ display: block;}
+	
+	.nav-holder.style-2 .toggleMenu{ padding: 17px 20px;}
+	.prcing .detail h3{ font-size: 20px;}
+	.testimonial-slider{ padding: 0;}
+	.testimonial-slider .slick-dots{ margin: 20px 0 0;}
+
+	.accomodations.style-2 .address-widget{ margin: 30px 0;}
+	.accomodations.style-2 .accomodations-slider .slick-dots{ margin: 0 0 0 -50px;}
+
+	.nav-list > li > a{ text-align: left;}
+
+	.nav-holder.style-2 .dropdowns{ float: left;}
+	.nav-holder.style-3 .nav-list{ top: 145%;}
+
+	.time-acounter{ display: inline-block;}
+}
+
+@media (max-width: 800px) {
+	.caption h2{ font-size: 13px;}
+	.caption .location-list{ display: none!important;}
+
+	.previous-videos .caption h2{ font-size: 30px; margin: 0 0 10px;}
+	.previous-videos .caption h2 span{ font-size: 30px;}
+	.previous-videos .caption h2 span sup{ font-size: 20px;}
+	.previous-videos .caption h3{ font-size: 16px; line-height: 16px; margin: 0 0 10px;}
+	.play-icon{ height: 50px; line-height: 44px; text-align: center; width: 50px; font-size: 20px;}
+
+	.form-holder .contact-map{ height: 300px;}
+	.post-detail figure > img{ width: 100%;}
+
+	.instagram-slider li a::before{ border-width: 180px 180px 0 0;}
+
+	.video-container{ height: 38%;}
+	.event-img-list.style-2 .pt-30{ padding: 0;}
+
+	.error-content h2{ font-size: 30px;}
+
+	.countdown li span{ font-size: 36px;}
+
+	.video-section .col-sm-6{ width: 100%;}
+
+}
+
+@media screen and (max-width: 767px) {
+	.none-767{ display: none;}
+
+	.main-heading h2{ font-size: 26px;}
+	.main-heading h2 span{ font-size: 36px;}
+
+	.team::after{ height: 253px;}
+
+	.schedules-tab-nav::after{ visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+	.schedules-tab-nav li a{ padding: 15px 10px; font-size: 14px;}
+	.schedules-tab-nav li a span{ font-size: 14px;}
+	.schedules-tab-nav li a::before{ display: none;}
+
+	.sponsers-slider-holder .sponsers-title{ padding: 17px 15px;}
+
+	.pricing-img{ left: 25px;}
+
+	.footer-logo p{ font-size: 13px;}
+	.sub-footer{ text-align: center;}
+	.sub-footer .tc-social-icons.style-2{ float: none; display: inline-block;}
+	.sub-footer p{ float: none;}
+
+	.schedules-tab-nav ul{ background: #fff;}
+	.schedules-tab-nav ul li a{ font-size: 12px; padding: 15px 9px;}
+	.schedules-tab-nav ul li a span{ font-size: 11px;}
+	.schedules-tab-nav ul li a{ padding: 10px;}
+	.program-4 .schedules-tab-nav li{ margin: 0 0 0 10px;}
+	.schedules-tab-nav{ margin: -30px 0 0;}
+
+	.testimonial-holder{ background-size: 100% 100%!important;}
+	.testimonial-slider{ padding: 0;}
+	.testimonial-slider li p{ font-size: 18px;}
+
+	.accomodations.style-2 .accomodations-slider{ margin: 40px 0;}
+	.accomodations.style-2 .accomodations-slider .slick-dots{ margin: 0 0 40px -49px;}
+
+	.welcome-text.style-left{ margin: 0 0 30px;}
+
+	aside{ margin: 50px 0 0;}
+
+	.page-heading h1{ font-size: 28px;} 
+
+	.leave-comment{ margin: 0 0 30px;}
+
+	.contact.style-2 .contact-map{ margin: 0 0 40px;}
+	.contact-widget{ margin: 20px 0;}
+	.contact.style-2{ padding-bottom: 0;}
+
+	.instagram-slider li a::before{ border-width: 154px 157px 0 0;}
+
+	.soon-content{ width: 100%;}
+	.time-acounter{ width: auto!important; display: inline-block!important;}
+
+	.countdown li{ font-size: 11px;}
+	.countdown li span{ font-size: 26px;}
+
+}
+
+@media screen and (max-width: 639px) {
+	.caption span{ display: none;}
+	.caption h2{ display: none;}
+	.caption .btn-list{ display: none;}
+	.top-left{ display: none;}
+	.logo-bar .address-list{ display: none;}
+
+	.schedules-tab-nav li a{ padding: 15px 6px;}
+	.schedules-tab-nav li a span{ font-size: 10px;}
+
+	.schedules-widget .detail{ margin: 0;}
+	.schedules-widget{ padding: 0;}
+	.schedules-widget::before{ display: none;}
+	.speaker-imgs{ position: static; margin: 30px 0 0;}
+	.team::after{ height: 313px;}
+
+	.xs-full-width-2{ width: 100%;}
+
+	.news-post{ margin: 0 0 30px;}
+
+	.prcing{ margin: 0; padding: 0;}
+
+	.pricing-img{ height: 100px; left: 10px; width: 126px;}
+	.pricing-title h2{ font-size: 30px;}
+	.pricing-title h2 span{ font-size: 30px;}
+	.prcing .detail{ padding: 30px 30px 30px 90px;}
+	.footer-link ul li{ margin: 0 0 0 18px;}
+
+	.footer-logo p{ display: none;}
+
+	.prcing .detail h3{ font-size: 18px;}
+	.dot-line{ display: none!important;}
+	.caption .btn-list{ display: none!important;}
+
+	.schedules-tab-nav ul li a{ padding: 10px 5px;}
+	.schedules-widget .detail{ border: 0; padding: 0;}
+
+	.prcing-list-2.style-2{ margin: 0;}
+	.prcing-slider-2 .item{ padding: 0;}
+	.prcing.style-2 .detail h3{ display: block;}
+
+	.time-acounter{ width: 82%;}
+	.error-content h2{ font-size: 25px;}
+
+	.page-heading h1{ font-size: 22px; line-height: 24px; padding: 0 0 24px;}
+
+	.prcing .detail h3{ font-size: 14px;}
+	.prcing.style-2 .detail{ padding: 0 20px 40px;}
+
+	.prcing-slider-3 .reserve-btn{ margin: 0 20px 0 0;}
+	.prcing-slider-3 .reserve-btn select{ width: 100%;}
+	.prcing-slider-3 .reserve-btn .btn{ width: 100%; margin: 10px 0 0;}
+	.prcing-slider-3 .prcing .detail ul{ margin: 0 0 45px;}
+
+	.speaker-widget .speaker-detail > span{ font-size: 11px;}
+
+	.speaker-img{ margin: 0 0 30px;}
+
+	.schedules-widget p{ display: none;}
+	.schedules-widget .speaker-imgs{ display: none;}
+
+	.time-acounter{ width: 100%!important; text-align: center;}
+	.time-acounter ul{ display: inline-block!important;}
+}
+
+@media screen and (max-width: 479px) {
+
+	.logo-bar > .btn{ display: none;}
+	.search-bar .form-control{ min-width: 150px;}
+	.logo{ text-align: center; width: 100%;}
+
+	.xs-full-width{ width: 100%;}
+
+	.welcome-img > img{ width: 100%; margin: 0 0 20px;}
+	.caption{ display: none!important;}
+
+	.team-slider{ padding: 0 60px;}
+
+	.team::after{ height: 253px;}
+	.team-slider .slick-next::before{ right: 10px;}
+	.team-slider .slick-prev::before{ left: 10px;}
+
+	.schedules-tab-nav ul li{ width: 100%; border-bottom: 1px solid #ccc; border-right: 0;}
+	.tab-content{ padding: 0;}
+	.tabs-holder{ padding: 10px;}
+	.schedules-widget{ margin: 0; padding: 15px!important;}
+
+	.previous-videos{ display: none;}
+
+	.sponsers-title{ display: none;}
+	.sponsers-slider-holder{ padding: 0;}
+
+	.schedules-widget{ padding: 15px;}
+
+	.recent-posts-holder{ display: none;}
+	.footer-link{ display: none;}
+
+	.address-widget{ margin: 0 0 30px;}
+	.accomodations-slider .slick-dots{ margin: 0 0 0 -54px;}
+
+	.news-latter .form-group{ margin: 0 0 10px;}
+	.news-latter h3{ font-size: 18px;}
+
+	.welcome-img{ display: none;}
+
+	.prcing{ margin:  60px 0!important;}
+	.prcing .detail{ padding: 50px 30px 30px;}
+	.pricing-img{ left: 48px; top: 0;}
+
+	.main-heading h2{ font-size: 20px;}
+	.main-heading h2 span{ font-size: 26px;}
+
+	.nav-holder.style-3 .cart-option{ display: none;}
+	.nav-holder.style-3 .logo{ width: 60%;}
+
+	.countdown li{ padding: 0 13px; font-size: 10px;}
+	.countdown li span{ margin: 0 0 15px;}
+
+	.error-content h1{ font-size: 90px; font-weight: 900; line-height: 60px; margin: 0 0 30px;}
+	.error-content h2{ font-size: 16px; margin: 0 0 30px;}
+	.error-content .search-bar{ margin: 0 0 30px;}
+	.cart-option{ display: none;}
+
+	.news-post figure iframe{ height: 194px;}
+	.meta-post ul li::before{ margin: 0 4px;}
+	.post-detail h3{ font-size: 16px;}
+
+	.schedules-widget.style-2{ padding: 20px;}
+	.schedules-widget h3{ font-size: 14px;}
+
+	.soon-content > img{ width: 50%;}
+	.soon-content h1{ font-size: 18px;}
+	.soon-content h3{ display: none;}
+	.soon-content .seprater-line{ margin: 30px auto;}
+}
+@media (max-height: 800px) {
+  .time-acounter {
+    visibility: hidden;
+  }
+  .banner-overlay {
+    margin-top: 100px;
+  }
+}

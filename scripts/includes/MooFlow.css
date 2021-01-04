@@ -1,0 +1,64 @@
+#contenter {
+	width:430px;
+	cursor: pointer;
+}
+.mf {
+	Z-INDEX: 1; VISIBILITY: hidden; COLOR: #000000; FONT-SIZE: 14px
+}
+.mf * {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; MARGIN: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 0px; OUTLINE-WIDTH: medium; PADDING-RIGHT: 0px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px; -moz-user-select: none; -webkit-user-select: none; user-select: none; -o-user-select: none
+}
+.mf DIV.loader {
+	Z-INDEX: 10000; POSITION: absolute; TEXT-ALIGN: center; PADDING-BOTTOM: 50px; MARGIN: 0px auto; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: url(skin/ajax_loader.gif) no-repeat 50% 0px; TOP: 45%; PADDING-TOP: 50px
+}
+.mf DIV.caption {
+	Z-INDEX: 98; POSITION: absolute; TEXT-ALIGN: center; MARGIN: 1em auto; WIDTH: 100%; BOTTOM: 50px
+}
+.mf DIV.mfNav {
+	Z-INDEX: 99; POSITION: absolute; TEXT-ALIGN: center; LINE-HEIGHT: 1px; MARGIN: 0px auto; WIDTH: 100%; BOTTOM: 20px; FONT-SIZE: 1px
+}
+.mf DIV.autoPlayCon {
+	PADDING-LEFT: 3%; WIDTH: 10%; FLOAT: left; HEIGHT: 24px
+}
+.mf A.play {
+	WIDTH: 27px; FLOAT: left; HEIGHT: 24px; CURSOR: pointer
+}
+.mf A.stop {
+	WIDTH: 27px; FLOAT: left; HEIGHT: 24px; CURSOR: pointer
+}
+.mf A.play {
+	BACKGROUND: url(skin/play.gif) no-repeat
+}
+.mf A.stop {
+	BACKGROUND: url(skin/stop.gif) no-repeat
+}
+.mf DIV.sliderCon {
+	MARGIN-TOP: 5px; WIDTH: 74%; FLOAT: left
+}
+.mf A.sliderNext {
+	BACKGROUND: url(skin/left.gif) no-repeat
+}
+.mf A.sliderPrev {
+	BACKGROUND: url(skin/right.gif) no-repeat
+}
+.mf A.sliderNext {
+	WIDTH: 25px; FLOAT: left; HEIGHT: 16px; CURSOR: pointer; TEXT-DECORATION: none
+}
+A.sliderPrev {
+	WIDTH: 25px; FLOAT: left; HEIGHT: 16px; CURSOR: pointer; TEXT-DECORATION: none
+}
+.mf DIV.resizeCon {
+	WIDTH: 10%; PADDING-RIGHT: 3%; FLOAT: right; HEIGHT: 24px
+}
+.mf A.resize {
+	WIDTH: 34px; BACKGROUND: url(skin/resize.gif) no-repeat; FLOAT: right; HEIGHT: 24px; CURSOR: pointer
+}
+.mf DIV.slider {
+	POSITION: relative; TEXT-ALIGN: left; BACKGROUND: url(skin/middle.gif) repeat-x; FLOAT: left; HEIGHT: 16px
+}
+.mf DIV.knob {
+	BACKGROUND: url(skin/middle-slider.gif) repeat-x right center; HEIGHT: 16px
+}
+.mf DIV.knobleft {
+	WIDTH: 8px; BACKGROUND: url(skin/left-slider.gif) repeat-x center 50%; HEIGHT: 16px
+}

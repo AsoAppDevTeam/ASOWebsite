@@ -1,0 +1,55 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 07/02/2019 09:04
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+url("../fonts/Flaticon.woff2") format("woff2"),
+url("../fonts/Flaticon.woff") format("woff"),
+url("../fonts/Flaticon.ttf") format("truetype"),
+url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-size:auto;
+	font-style: normal;
+	margin-left:0px;
+}
+
+.flaticon-lock:before { content: "\f100"; }
+.flaticon-water:before { content: "\f101"; }
+.flaticon-parked-car:before { content: "\f102"; }
+.flaticon-lamp-post:before { content: "\f103"; }
+.flaticon-road-with-broken-line:before { content: "\f104"; }
+.flaticon-medicine-briefcase:before { content: "\f105"; }
+.flaticon-playground:before { content: "\f106"; }
+.flaticon-open-book:before { content: "\f107"; }
+.flaticon-conference-hall:before { content: "\f108"; }
+.flaticon-security:before { content: "\f109"; }
+.flaticon-mall:before { content: "\f10a"; }
+.flaticon-tall-city-building:before { content: "\f10b"; }
+.flaticon-houses:before { content: "\f10c"; }
+.flaticon-park:before { content: "\f10d"; }
+.flaticon-transformer:before { content: "\f10e"; }
+.flaticon-bathroom-drainage-of-circular-shape:before { content: "\f10f"; }
+.flaticon-flash:before { content: "\f110"; }
+.flaticon-gate:before { content: "\f111"; }
+.flaticon-generator:before { content: "\f112"; }
+.flaticon-running:before { content: "\f113"; }
+.flaticon-terrace:before { content: "\f114"; }
+.flaticon-metal-detector-gate:before { content: "\f115"; }
+.flaticon-field:before { content: "\f116"; }

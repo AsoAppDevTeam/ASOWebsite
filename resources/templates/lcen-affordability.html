@@ -1,0 +1,671 @@
+    <div class="main">
+      <div class="breadcrumb">
+        <a href="../../">return to homepage</a> > <a href="../">Learning Centre</a>
+      </div> <!-- end: breadcrumb -->
+      <div class="mainpagecontent">
+        <div class="contentwrapper">
+          <div class="pagehead">
+            <div class="pageheadinner">
+              Affordability Calculator
+            </div> <!-- end: pageheadinner -->
+          </div> <!-- end: pagehead -->
+          <menu>
+            <ul class="slideMenu">
+              <li><a href="../">Home</a></li>
+              <li><a href="#">A to Z on Mortgages</a>
+                <ul>
+                  <li><a href="../a2z/">Mortgages In Nigeria</a></li>
+                  <li><a href="../a2z/mortgageprocess/">General Mortgage Steps</a></li>
+                  <li><a href="../a2z/housetypes/">House Types</a></li>
+                  <li><a href="../a2z/glossary/">Mortgage Glossary</a></li>
+                  <li><a href="../a2z/credit/">Credit Scoring</a></li>
+                  <li><a href="../a2z/faqs/">F.A.Qs</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Getting Started</a>
+                <ul>
+                  <li><a href="../gettingstarted/">ASO Mortgage Process</a></li>
+                  <li><a href="../../products/myresidential/">Select ASO Mortgages</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Mortgage Calculators</a>
+                <ul>
+                  <li class="first activeTrail"><a href="#">How much can I borrow?</a></li>
+                  <li><a href="payment/">Payment Calculator</a></li>
+                  <li><a href="amortization/">Amortization Calculator</a></li>
+                </ul>
+              </li>
+              <li><a href="http://mls.asoplc.com/" target="_blank">Find My Dream Home</a></li>
+            </ul>
+          </menu>
+          <div class="asomain">
+            <p><em>To use the calculator, enter the following information:</em></p>
+            <form method="post" name="mortCalc">
+              <table id="tableform" border="0" cellspacing="0" cellpadding="0" width="530px">
+                <tbody>
+                  <tr>
+                    <td colSpan="4">
+                      <h1>ASO Affordability Calculator</h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colSpan="4">
+                      <p>This calculator will help you to determine how much of a mortgage loan you can afford and/or qualify for.</p>
+                      <p>Complete or change the entry fields in the "Input" column of all three sections. The calculator will automatically recalculate anytime you press the Tab key after making a change to an input field.</p>
+                    </td>
+                  </tr>
+                  <tr class="headerone">
+                    <td width="50" class="stepTD">&nbsp;</td>
+                    <td width="231" class="stepTD">ASO's Lending Requirements</td>
+                    <td width="112" class="stepTD" align="center">Inputs</td>
+                    <td width="137" class="stepTD" align="center">Outputs</td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">1.</td>
+                    <td class="titleTD">Rate:</td>
+                    <td class="inputTD"><input onchange="computeForm(this.form)" value="22" size="10" type="text" name="intRate">&nbsp;<span class="smlblk">%</span></td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">2.</td>
+                    <td class="titleTD">Years:</td>
+                    <td class="inputTD"><input onchange="computeForm(this.form)" value="10" size="10" type="text" name="noYears">&nbsp;years</td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">3.</td>
+                    <td class="titleTD">Number Of Payments Per Year:</td>
+                    <td class="inputTD"><input onchange="computeForm(this.form)" value="12" size="10" type="text" name="payYears"></td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">4.</td>
+                    <td class="titleTD">Equity Down Payment:</td>
+                    <td class="inputTD"><input onchange="computeForm(this.form)" value="20" size="10" type="text" name="downPayPercAmt">&nbsp;<select onchange="computeForm(this.form)" size="1" name="downPayMethod"> <option selected value=0>%<option value="1">N</option></select></td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr class="headerone">
+                    <td class="stepTD">&nbsp;</td>
+                    <td class="stepTD">Borrower's Information</td>
+                    <td class="stepTD" align="center">Inputs</td>
+                    <td class="stepTD" align="center">Outputs</td>
+                  </tr>
+                  <tr class="headertwo">
+                    <td colspan="4">Gross Monthly Income</td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">5.</td>
+                    <td class="titleTD">Salary:&nbsp;&nbsp;&nbsp;<select onchange="computeForm(this.form)" size="1" name="SalarypayMethod"><option selected value="0">Annually<option value="1">Monthly</option></select></td>
+                    <td class="inputTD">N <input onchange="computeForm(this.form)" value="500000" size="10" type="text" name="grossPay"> </td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">6.</td>
+                    <td class="titleTD">Bonuses:&nbsp;&nbsp;&nbsp;<select onchange="computeForm(this.form)" size="1" name="bonuspayMethod"><option selected value="0">Annually<option value="1">Monthly</option></select></td>
+                    <td class="inputTD">N <input onchange="computeForm(this.form)" size="10" value="20000" type="text" name="bonusPay"></td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">7.</td>
+                    <td class="titleTD">Commissions:&nbsp;&nbsp;&nbsp;<select onchange="computeForm(this.form)" size="1" name="commpayMethod"><option selected value="0">Annually<option value="1">Monthly</option></select></td>
+                    <td class="inputTD">N <input onchange="computeForm(this.form)" size="10" value="0" type="text" name="commissionPay"> </td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">8.</td>
+                    <td class="titleTD">Other:&nbsp;&nbsp;&nbsp;<select onchange="computeForm(this.form)" size="1" name="otherpayMethod"> <option selected value="0">Annually<option value="1">Monthly</option></select></td>
+                    <td class="inputTD">N <input onchange="computeForm(this.form)" size="10" value="0" type="text" name="otherPay"></td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr class="headerthree">
+                    <td colspan="3" class="titleTD">Total Gross Income:</td>
+                    <td align="center" class="inputTD">N <input readonly size="10" type=text value="520000" name="totalPay"></td>
+                  </tr>
+                  <tr class="headertwo">
+                    <td align="center" colspan="4">Monthly Obligations</td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">9.</td>
+                    <td class="titleTD">Mortgage/Rent Payments:&nbsp;&nbsp;&nbsp;<select onchange="computeForm(this.form)" size="1" name="rentExpMethod"><option selected value="0">Annually<option value="1">Monthly</option></select></td>
+                    <td class="inputTD">N <input onchange="computeForm(this.form)" value="50000" size="10" type="text" name="mortExp"> </td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">10.</td>
+                    <td class="titleTD">Personal Expenses:&nbsp;&nbsp;&nbsp;<select onchange="computeForm(this.form)" size="1" name="persExpMethod"><option selected value="0">Annually<option value="1">Monthly</option></select></td>
+                    <td class="inputTD">N <input onchange="computeForm(this.form)" value="20000" size="10" type="text" name="persExp"> </td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">11.</td>
+                    <td class="titleTD">Loans:&nbsp;&nbsp;&nbsp;<select onchange="computeForm(this.form)" size="1" name="loansExpMethod"><option selected value="0">Annually<option value="1">Monthly</option></select></td>
+                    <td class="inputTD">N <input onchange="computeForm(this.form)" value="0" size="10" type="text" name="loansExp"></td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr>
+                    <td class="stepTD">12.</td>
+                    <td class="titleTD">Other:&nbsp;&nbsp;&nbsp;<select onchange="computeForm(this.form)" size="1" name="otherExpMethod"><option selected value="0">Annually<option value="1">Monthly</option></select></td>
+                    <td class="inputTD">N <input onchange="computeForm(this.form)" value="0" size="10" type="text" name="otherExp"></td>
+                    <td class="titleTD"></td>
+                  </tr>
+                  <tr class="headerthree">
+                    <td colspan="3" class="titleTD">Total Obligations:</td>
+                    <td align="center" class="inputTD">N <input readonly size="10" type="text" value="70000" name="totalExp"></td>
+                  </tr>
+                  <tr class="headerone">
+                    <td align="center" colspan="2" class="stepTD">Affordability Information</td>
+                    <td align="center">Inputs</td>
+                    <td align="center">Outputs</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="titleTD">Mortgage Amount:</td>
+                    <td class="titleTD"></td>
+                    <td align="center" class="inputTD">N <input readonly size="10" type="text" name="result1"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="titleTD">Borrower's Equity Amount:</td>
+                    <td class="titleTD"></td>
+                    <td align="center" class="inputTD">N <input readonly size="10" type="text" name="result2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="titleTD">Monthly Mortgage Payments:</td>
+                    <td class="titleTD"></td>
+                    <td align="center" class="inputTD">N <input readonly size="10" type="text" name="result3"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="titleTD">Home Affordability Amount:</td>
+                    <td class="titleTD"></td>
+                    <td align="center" class="inputTD">N <input readonly size="10" type=text name="result4"> </td>
+                  </tr>
+                  <tr>
+                    <td align="center" colSpan="4" class="titleTD">
+                    <input onclick="computeForm(this.form)" value="Calculate" type="button">
+                    <input value="Reset" type="reset"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div> <!-- end: asomain -->	
+        </div> <!-- end: contentwrapper -->	  
+        <div class="asoshade gradient">	
+          <div class="insideshadow">&nbsp;
+          </div> <!-- end: insideshadow -->
+        </div> <!-- end: asoshade -->
+        <div class="asoside">
+          <div id="newsletter">
+            <a href="../../mls/" target="_blank"><img src="../../resources/img/icons/asomls.png" alt=""></a>
+          </div> <!-- end: newsletter -->
+          <div class="quicklinks">
+            <script type="text/javascript">
+              <!--
+              function parseNavigation(ob) {
+                toBeBrokenDown = ob.options[ob.selectedIndex].value.split("|");
+      
+                targetWindow = toBeBrokenDown[0];
+                targetURL    = toBeBrokenDown[1];
+      
+                if (targetWindow!=='') {
+                  window.open(targetURL,targetWindow,'toolbar=1,location=1,directories=1,status=1,menubar=1,scrollbars=1,resizable=1,width=400,height=300');
+                  ob.selectedIndex = 0;
+                } else {		
+                  window.open(targetURL,'_top')
+                }
+              }
+              //-->
+            </script>
+            <form name="form" id="form" action="">
+              <select class="searchfont" onchange="parseNavigation(this)" style="width:230px; padding:2px;">
+                <option selected="selected">Quick Links</option>
+                <option value="|http://www.asoplc.com/company/">About ASO</option>
+                <option value="|http://www.asoplc.com/exco/">ASO Exhibition &amp; Conference 2013</option>
+                <option value="|http://www.asoplc.com/products/myhouse/">ASO MyHouse Account</option>
+                <option value="|http://www.asoplc.com/products/faqs/">Individual Banking F.A.Q</option>
+                <option value="|http://www.asoplc.com/products/myhousepurchase/">MyHouse Purchase Program</option>
+                <option value="|http://www.asoplc.com/products/myresidential/">MyResidential Mortgage Loan</option>
+                <option value="|http://www.asoplc.com/products/mybusiness/">MyBusiness Mortgage</option>
+                <option value="|http://www.asoplc.com/learningcentre/calculators/">ASO Affordability Calculator</option>
+                <option value="|http://www.asoplc.com/learningcentre/calculators/payment/">ASO Payment Calculator</option>
+                <option value="|http://www.asoplc.com/learningcentre/calculators/amortization/">ASO Amortization Calculator</option>
+                <option value="|http://www.asoplc.com/products/faqs/homefinance/">Home Finance F.A.Q</option>
+                <option value="|http://www.asoplc.com/products/faqs/business/">Business Banking F.A.Q</option>
+                <option value="|http://www.asoplc.com/products/mobile/">E-Banking Solutions</option>
+                <option value="|http://www.asoplc.com/learningcentre/a2z/mortgageprocess/">General Mortgage Steps</option>
+                <option value="|http://mls.asoplc.com/Property">Available Properties</option>
+                <option value="|http://www.asoplc.com/mail/whistleblowerform.php">ASO Whistleblower Form</option>
+              </select>
+            </form>
+          </div> <!-- end: quicklinks -->
+          <div class="infoheader">
+            <img src="../../resources/img/newinfoheaders/ad9.png" alt="">
+          </div> <!-- end: infoheader -->
+        </div> <!-- end: asoside -->
+      </div> <!-- end: mainpagecontent -->
+      <script type="text/javascript" src="../../scripts/includes/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28605460-1']);
+        _gaq.push(['_trackPageview']);
+  
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  
+         })();
+      </script>
+      <SCRIPT language=JavaScript>
+function stripNum(num) {
+ var isNeg=0;
+ num=num.toString();
+
+ var len = num.length;
+ var rnum = "";
+ var test = "";
+ var j = 0;
+ var b = num.substring(0,1);
+ if(b == "-") {
+    rnum = "-";
+ }
+
+ for(i = 0; i <= len; i++) {
+    b = num.substring(i,i+1);
+    if(b == "0" || b == "1" || b == "2" || b == "3" || b == "4" || b == "5" || b == "6" || b == "7" || b == "8" || b == "9" || b == ".") {
+       rnum = rnum + "" + b;
+    }
+ }
+
+ if(rnum == "" || rnum == "-") {
+    rnum = 0;
+ }
+
+ rnum = Number(rnum);
+ return rnum;
+}
+
+function formatCurrency(num) {
+  var isNeg=0;
+
+  if(num < 0) {
+     num=num*-1;
+     isNeg=1;
+  }
+
+  onum=Math.round(num*100)/100;
+  integer=Math.floor(onum);
+
+  if (Math.ceil(onum) == integer) {
+      decimal="00";
+  } else{
+      decimal=Math.round((onum-integer)*100)
+  }
+  decimal=decimal.toString();
+  if (decimal.length<2) decimal="0"+decimal;
+
+  integer=integer.toString();
+  var tmpnum="";
+  var tmpinteger="";
+  var y=0;
+
+  for (x=integer.length;x>0;x--) {
+      tmpnum=tmpnum+integer.charAt(x-1);
+      y=y+1;
+      if (y==3 & x>1) {
+          tmpnum=tmpnum+",";
+          y=0;
+      }
+  }
+
+  for (x=tmpnum.length;x>0;x--) {
+      tmpinteger=tmpinteger+tmpnum.charAt(x-1);
+  }
+      
+  finNum="$"+tmpinteger+"."+decimal;
+
+  if(isNeg == 1) {
+     finNum = "-" + finNum;
+  }
+
+  return finNum;
+}
+
+function formatNumber(num) {
+  var isNeg=0;
+
+  if(num < 0) {
+     num=num*-1;
+     isNeg=1;
+  }
+
+  onum=Math.round(num*100)/100;
+  integer=Math.floor(onum);
+
+  if (Math.ceil(onum) == integer) {
+      decimal="00";
+  } else{
+      decimal=Math.round((onum-integer)*100)
+  }
+  decimal=decimal.toString();
+  if (decimal.length<2) decimal="0"+decimal;
+
+  integer=integer.toString();
+  var tmpnum="";
+  var tmpinteger="";
+  var y=0;
+
+  for (x=integer.length;x>0;x--) {
+      tmpnum=tmpnum+integer.charAt(x-1);
+      y=y+1;
+      if (y==3 & x>1) {
+          tmpnum=tmpnum+",";
+          y=0;
+      }
+  }
+
+  for (x=tmpnum.length;x>0;x--) {
+      tmpinteger=tmpinteger+tmpnum.charAt(x-1);
+  }
+      
+  finNum=tmpinteger+"."+decimal;
+
+  if(isNeg == 1) {
+     finNum = "-" + finNum;
+  }
+
+  return finNum;
+}
+
+function pv(rate, per, nper, pmt, fv){
+
+  nper = parseFloat(nper);
+  pmt = parseFloat(pmt);
+  fv = parseFloat(fv);
+  rate = eval((rate)/(per * 100));
+  
+  if (( pmt == 0 ) || ( nper == 0 )) {
+    alert("Monthly Payment and Payment Period can NOT be zero?");
+    return(0);
+  }
+
+  if ( rate == 0 ){ // Interest rate is 0
+    pv_value = -(fv + (pmt * nper));
+  }
+  else {
+    x = Math.pow(1 + rate, -nper);
+    y = Math.pow(1 + rate, nper);
+    pv_value = - ( x * ( fv * rate - pmt + y * pmt )) / rate;
+  }
+
+  pv_value = conv_number(pv_value,2);
+  return (pv_value);
+}
+
+function conv_number(expr, decplaces) { 
+  var str = "" + Math.round(eval(expr) * Math.pow(10,decplaces));
+
+  while (str.length <= decplaces) {
+    str = "0" + str;
+  }
+
+  var decpoint = str.length - decplaces;
+
+  return (str.substring(0,decpoint) + "." + str.substring(decpoint,str.length));
+}
+
+function computeForm(form) {
+
+//get loan variables
+
+ var VgrossPay = stripNum(form.grossPay.value);
+ if(form.SalarypayMethod.selectedIndex == 0) {
+   var VcalGross = VgrossPay;
+ } else {
+   var VcalGross = VgrossPay * 12;
+ }
+ 
+ var VbonusPay = stripNum(form.bonusPay.value);
+ if(form.bonuspayMethod.selectedIndex == 0) {
+   var VcalBonus = VbonusPay;
+ } else {
+   var VcalBonus = VbonusPay * 12;
+ }
+ 
+ var VcommissionPay = stripNum(form.commissionPay.value);
+ if(form.commpayMethod.selectedIndex == 0) {
+   var VcalComm = VcommissionPay;
+ } else {
+   var VcalComm = VcommissionPay * 12;
+ }
+ 
+ var VotherPay = stripNum(form.otherPay.value);
+ if(form.otherpayMethod.selectedIndex == 0) {
+   var VcalOther = VotherPay;
+ } else {
+   var VcalOther = VotherPay * 12;
+ }
+ 
+ var VtotalPay = VcalGross + VcalBonus + VcalComm + VcalOther;
+ 
+ var VmortExp = stripNum(form.mortExp.value);
+  if(form.rentExpMethod.selectedIndex == 0) {
+   var VcalMort = VmortExp;
+ } else {
+   var VcalMort = VmortExp * 12;
+ }
+ 
+ var VpersExp = stripNum(form.persExp.value);
+ if(form.persExpMethod.selectedIndex == 0) {
+   var VcalPers = VpersExp;
+ } else {
+   var VcalPers = VpersExp * 12;
+ }
+ 
+ var VloansExp = stripNum(form.loansExp.value);
+ if(form.loansExpMethod.selectedIndex == 0) {
+   var VcalLoans = VloansExp;
+ } else {
+   var VcalLoans = VloansExp * 12;
+ }
+ 
+ var VotherExp = stripNum(form.otherExp.value);
+ if(form.otherExpMethod.selectedIndex == 0) {
+   var VcalOther = VotherExp;
+ } else {
+   var VcalOther = VotherExp * 12;
+ }
+ 
+ var VtotalExp = VcalMort + VcalPers + VcalLoans + VcalOther;
+ 
+ form.totalPay.value = formatNumber(VtotalPay);
+ form.totalExp.value = formatNumber(VtotalExp);
+ 
+ 
+ var VintRate = stripNum(form.intRate.value);
+ var VnoYears = stripNum(form.noYears.value);
+ var VpayYears = stripNum(form.payYears.value);
+ var VdownPay = stripNum(form.downPayPercAmt.value);
+ var VdownPayMethod = form.downPayMethod.selectedIndex;
+ var VdownPayAmt = 0;
+ 
+ var Vrate = (VintRate);
+ var VnPer = (VnoYears * VpayYears);
+ var VPmt = ((VtotalPay - VtotalExp)*0.33);
+ var Vpv = pv(Vrate,VpayYears,VnPer,VPmt,0)*-1;
+ if(form.downPayMethod.selectedIndex == 0) {
+   var VeQuity = (Vpv/(1-(VdownPay/100))*VdownPay)/100; 
+ } else {
+   var VeQuity = VdownPay;  
+ }
+ 
+ form.result1.value = formatNumber(Vpv);
+ form.result2.value = formatNumber(VeQuity);
+ form.result3.value = formatNumber(VPmt);
+ form.result4.value = formatNumber(Vpv + VeQuity);
+} //End of function
+
+function createReport(form) {
+
+//GRAB VARIABLES
+
+if((form.Hprincipal.value == "" || form.Hprincipal.value == 0) || (form.HmoPmt.value == "" || form.HmoPmt.value == 0) || (form.HaNPer.value == "" || form.HaNPer.value == 0) || (form.intRate.value == "" || form.intRate.value == 0)) {
+ alert("Please compute the payment before creating the schedule.");
+ } else {
+
+var Vprincipal = stripNum(form.Hprincipal.value);
+
+var VintRate = stripNum(form.intRate.value);
+
+var VnumPmts = stripNum(form.HaNPer.value);
+
+var pmtAmt = stripNum(form.HmoPmt.value);
+
+var prin = Vprincipal;
+var Vint = VintRate;
+if(Vint >= 1) {
+ Vint /= 100;
+ }
+Vint /= 12;
+
+var nPer = VnumPmts;
+
+var intPort = 0;
+var accumInt = 0;
+var prinPort = 0;
+var accumPrin = 0;
+var count = 0;
+var pmtRow = "";
+var pmtNum = 0;
+
+
+var today = new Date();
+var dayFactor = today.getTime();
+var pmtDay = today.getDate();
+var loanMM = today.getMonth() + 1;
+var loanYY = today.getYear();
+if(loanYY < 1900) {
+ loanYY += 1900;
+}
+
+var loanDate = (loanMM + "/" + pmtDay + "/" + loanYY);
+var monthMS = 86400000 * 30.4;
+var pmtDate = 0;
+
+var displayPmtAmt = 0;
+
+var accumYearPrin = 0;
+var accumYearInt = 0;
+
+while(count < nPer) {
+
+ if(count < (nPer - 1)) {
+
+    intPort = prin * Vint;
+    intPort *= 100;
+    intPort = Math.round(intPort);
+    intPort /= 100;
+
+    accumInt = eval(accumInt) + eval(intPort);
+    accumYearInt = eval(accumYearInt) + eval(intPort);
+
+    prinPort = eval(pmtAmt) - eval(intPort);
+    prinPort *= 100;
+    prinPort = Math.round(prinPort);
+    prinPort /= 100;
+
+    accumPrin = eval(accumPrin) + eval(prinPort);
+    accumYearPrin = eval(accumYearPrin) + eval(prinPort);
+
+    prin = eval(prin) - eval(prinPort);
+
+    displayPmtAmt = eval(prinPort) + eval(intPort);
+
+ } else {
+
+    intPort = prin * Vint;
+    intPort *= 100;
+    intPort = Math.round(intPort);
+    intPort /= 100;
+
+    accumInt = eval(accumInt) + eval(intPort);
+    accumYearInt = eval(accumYearInt) + eval(intPort);
+
+    prinPort = prin;
+
+    accumPrin = eval(accumPrin) + eval(prinPort);
+    accumYearPrin = eval(accumYearPrin) + eval(prinPort);
+
+    prin = 0;
+
+    //pmtAmt = eval(intPort) + eval(prinPort);
+    displayPmtAmt = eval(prinPort) + eval(intPort);
+ }
+
+ count = eval(count) + eval(1);
+
+ pmtNum = eval(pmtNum) + eval(1);
+
+ dayFactor = eval(dayFactor) + eval(monthMS);
+
+ pmtDate = new Date(dayFactor);
+
+ pmtMonth = pmtDate.getMonth();
+
+ pmtMonth = pmtMonth + 1;
+
+ pmtYear = pmtDate.getYear();
+ if(pmtYear < 1900) {
+    pmtYear += 1900;
+ }
+
+
+ pmtString = (pmtMonth + "/" + pmtDay + "/" + pmtYear);
+
+ pmtRow = ("" + pmtRow + "<tr><td align=right><font face='arial'><small>" + pmtNum + "</small></font></td><td align=right><font face='arial'><small>" + pmtString + "</small></font></td><td align=right><font face='arial'><small>" + formatCurrency(prinPort) + "</small></font></td><td align=right><font face='arial'><small>" + formatCurrency(intPort) + "</small></font></td><td align=right><font face='arial'><small>" + formatCurrency(displayPmtAmt) + "</small></font></td><td align=right><font face='arial'><small>" + formatCurrency(prin) + "</small></font></td></tr>");
+
+ if(pmtMonth == 12 || count == nPer) {
+
+pmtRow = ("" + pmtRow + "<tr bgcolor='#dddddd'><td align=right><font face='arial'><small>Total</small></font></td><td align=left><font face='arial'><small>" + pmtYear + "</small></font></td><td align=right><font face='arial'><small>" + formatCurrency(accumYearPrin) + "</small></font></td><td align=right><font face='arial'><small>" + formatCurrency(accumYearInt) + "</small></font></td><td align=right><font face='arial'><small> </small></font></td><td align=right><font face='arial'><small> </small></font></td></tr>");
+
+ accumYearPrin = 0;
+ accumYearInt = 0;
+
+ }
+
+    if(count > 600) {
+
+       alert("With the current entries, you will be unable to pay-off this loan.");
+
+       break;
+
+       } else {
+
+       continue;
+
+       }
+
+  }
+
+var part1 = ("<head><title>Amortization Schedule</title></head>" + "<body bgcolor= '#FFFFFF'><br><br><center><font face='arial'><big><strong>Amortization Schedule</strong></big></font></center>");
+
+var part2 = ("<center><table border=1 cellpadding=2 cellspacing=0><tr><td colspan=6><font face='arial'><small><b>Loan Date: " + loanDate + "<br>Principal: $" + formatNumber(Vprincipal) + "<br># of Payments: " + nPer + "<br>Interest Rate: " + formatNumber(VintRate) + "%<br>Payment: $" + formatNumber(pmtAmt) + "</b></small></font></td></tr><tr><td colspan=6><center><font face='arial'><b>Schedule of Payments</b></font><br><font face='arial'><small><small>Please allow for slight rounding differences.</small></small></font></center></td></tr><tr bgcolor='silver'><td align='center'><font face='arial'><small><b>Pmt #</b></small></font></td><td align='center'><font face='arial'><small><b>Date</b></small></font></td><td align='center'><font face='arial'><small><b>Principal</b></small></font></td><td align='center'><font face='arial'><small><b>Interest</b></small></font></td><td align='center'><font face='arial'><small><b>Payment</b></small></font></td><td align='center'><font face='arial'><small><b>Balance</b></small></font></td></tr>");
+
+var part3 = ("" + pmtRow + "");
+
+var part4 = ("<tr><td colspan='2'><font face='arial'><small><b>Grand Total</b></small></font></td><td align=right><font face='arial'><small><b>" + formatCurrency(accumPrin) + "</b></small></font></td><td align=right><font face='arial'><small><b>" + formatCurrency(accumInt) + "</b></small></font></td><td> </td><td> </td></tr></table><br><center><form method='post'><input type='button' value='Close Window' onClick='window.close()'></form></center></body></html>");
+
+var schedule = (part1 + "" + part2 + "" + part3 + part4 + "");
+
+reportWin = window.open("","","width=500,height=400,toolbar=yes,menubar=yes,scrollbars=yes");
+
+reportWin.document.write(schedule);
+
+reportWin.document.close();
+
+ }
+
+}
+</SCRIPT>
+    </div> <!-- end: main -->
+  </div> <!-- end: asom -->
+  <div class="asor"></div> <!-- end: asor -->
+  <div class="clearfix"></div> <!-- end: clearfix -->
+</div> <!-- end: content -->

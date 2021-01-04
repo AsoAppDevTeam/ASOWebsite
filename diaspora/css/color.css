@@ -1,0 +1,93 @@
+.color-gray a,.case-studies-portfolio .options .filters li a,.secondary-color-dark,body h4,body h6,.content-block .button:hover i,.block-content .button:hover i,.btn-green-outline,header .navbar-nav .dropdown-menu li a,.experienced-team .block-content h2,.experienced-team .block-content .btn-primary-outline,.news .content-block h2,.news .content-block .btn-primary-outline,#sidebar .icon.icon-Search,#sidebar ul.menu-sidebar li a,.company-overview h2.underline-primary,.our-partners .block-content .btn-primary-outline,.tab-content .name,.insides .normal,.increase-rofitability-text h4,.map-tab-area ul li a,.our-clients h2,.nav-tabs>li>a, .normal {
+	color:#000;
+}
+.secondary-bg-dark,.options .filters li a.active,.case-studies-portfolio .options .filters li a.active,.secondary-bg-dark,.btn-secondary-outline:hover,.download,.footer {
+	background-color: #000;
+}
+.btn-secondary-outline {
+	border-color: #DA251D;
+}
+.btn-secondary,.btn-green:hover,.options,#main .conclusion .normal span,.btn-primary:hover {
+	background-color: #000;
+}
+.news-letter .social-icons i{}.grid,.portfolio,.news-letter2 .form-control,.news-letter2 .input-group-btn,.news-letter2 .input-group-btn .btn-default,.copyright {
+	background-color: #000;
+}
+.options .filters li a:after {
+	border-color:transparent transparent #162440 transparent;
+}
+.squre_wrap .square-menu ul li {
+	background-color: #152747;
+}
+header .navbar-nav li:hover>a,header .navbar-nav li.active>a,header .navbar-nav .dropdown-menu li:hover>a,.nav-tabs>li.active>a,.primary-color, #main .post-meta span.icon,#main .post-text .block-quote,.about_author .content i,.block-comments .comment .comment-meta .reply,#sidebar .post .date span,#sidebar .testimonial span.h_small,#sidebar .brochures .caps_normal .fa,.submission_requirments p a,.year_list label,.year_list span,.testimonial-area .testimonial .content span,.single-team-member .caps_small,.social-link li i,.team-member-contact-info .contact-info li i,.protfolio-single #main span.normal,#sidebar ul.menu-sidebar li a:hover,.news-letter2 .input-group-btn .btn-default i, .redtext, .home-banner.home-banner-col3 .square-menu ul li span i {
+	color: #DA251D;
+}
+.btn-secondary:hover, .post-pagination ul li a.active,.post-pagination ul li a:hover,.primary-bg,.border-title::after,.square-menu ul li:hover,.squre_wrap .square-menu ul li:hover,.year_list span,.service-single .accordion_wrap h4:after,.area-of-expertise h4:after,.service-single .squre_wrap h4:after,.insides h4:after,.education-training h4::after,.education-training ul li span::after,.area-of-expertise ul li span::after,.protfolio-single #main span.normal::after,.dark-primary-bg,.btn-primary-outline:hover, .career .figures-block .invested, .home-banner.home-banner-col3 .square-menu .know-more,.home-banner-col3 .square-menu ul li:hover .btn-hover,.page-wrapper-green .about-section .ewt {
+	background-color: #000;
+}
+.btn-primary,header .navbar-nav li:after, .underline-primary:after,.underline_bold:after,.underline_small:after, .help {
+	background-color: #DA251D;
+} 
+.post-pagination ul li a,.nav-tabs>li.active,#sidebar .testimonial img,.testimonial-area .testimonial img,.quote-text blockquote,.service-single .post-text .block-quote,.expertise-icon,.btn-primary-outline,.dropdown-menu,#sidebar ul.menu-sidebar li.active,#sidebar ul.menu-sidebar li:hover,.panel-heading,#main .post-text .block-quote,.primary-header .dropdown-menu {
+	border-color: #DA251D!important;
+}
+.lead,.our-clients,.testimonials .smaller,.post p.caps_normal,.tab-content p,.year_list .data p {
+	color:#6e6e6e;
+}
+.bg_gray,#sidebar ul.menu-sidebar li,#sidebar .testimonial-content,#sidebar .testimonial-content,.squre_wrap,.nav-tabs>li,.tab-content,.tab-content>.tab-pane,.faqs .panel-body,.overview .panel-default>.panel-heading+.panel-collapse>.panel-body,.quote-text blockquote,header .navbar-nav .dropdown-menu li:hover>a,#main .post-text .pool-quote,.pagination,.about_author,.comments-and-replay,.block-comments,.faqs .panel-body {
+	background-color:#f5f5f5;
+}
+.faqs .panel-heading {
+	background-color:#e5e3e3;
+}
+#sidebar .testimonial-content:after {
+	border-color:transparent transparent transparent #f5f5f5;
+}
+.color_blue,.color_blue a {
+	color:#21304f;
+}
+.is-sticky .navbar, .primary-header .is-sticky .navbar,.bg_dark_blue .is-sticky .navbar,.navbar-header .secondary-color-dark, .bg_dark_blue {
+	background-color:#FFF;
+}
+.normal_gray,.pagination .caps_small,.about_author .content .caps_small,.quantity li span {
+	color:#aaa;
+}
+.light_gray {
+	color:#d5d5d5;
+}
+.lighter_gray {
+	color:#e6e6e6;
+}
+.leave-a-reply form,.service-single .post-text .block-quote,#main h1,#main .post-text,.pagination,.about_author .content .normal,#main .block-comments h4,.block-comments .comment .content {
+	border-color: #d5d5d5;
+	font-weight: 400;
+	font-size: 29px;
+	color: #494949;
+}
+.tags a,#sidebar .icon.icon-Search,#sidebar input.form-control,.contact-form .archive select {
+	background-color:#e6e6e6;
+}
+.input-group-addon,#sidebar input.form-control:focus,.leave-a-reply form input:focus,.leave-a-reply form textarea:focus {
+	border-color:#e6e6e6;
+}
+header.primary-header .navbar-nav li:hover>a,header.primary-header .navbar-nav li.active>a,header.primary-header .navbar-nav .dropdown-menu li:hover>a {
+	color:#80ba26;
+}
+.orange {
+	color:#f97f3c;
+}
+.home-banner-col3 .square-menu ul li:hover .btn-hover {
+	background-color:#f97f3c;
+}
+.page-wrapper-green .about-section .invested {
+	background-color:#649d0c;
+}
+.btn-black,#sidebar .brochures,.help a {
+	background-color: #000;
+}
+.square-menu a, .help a, .brochures a {
+	color: #FFF;
+}
+.square-menu a:hover, .help a:hover, .brochures a:hover {
+	color: #DA251D;
+}

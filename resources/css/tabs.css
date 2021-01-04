@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v7/IczWvq5y_Cwwv_rBjOtT0w.woff) format('woff');
+}
+.tabs{
+    overflow: hidden;
+    float: left;
+}
+
+.tabs i{
+    padding-right: 5px; 
+    font-size: 13px;
+}
+
+.tabs li{
+    float: left;
+    border-left: 1px solid #eee;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    line-height: 38px;
+    top: 1px;
+    background-color: #f6f6f6;
+    cursor: pointer;
+}
+
+.tabs li a{    
+    color: #333;    
+    padding: 0px 16px;
+    font: 13px 'Raleway', Arial, sans-serif;
+    line-height: 38px;
+    padding-top: 2px;
+	text-decoration:none;
+}
+.tabs li a:hover {
+	color: #727c89 !important;
+}
+.tabs li.active{
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+.tabs li:first-child{
+    border-left: none;
+}
+
+.tabs li.active:first-child{
+    border-left: 1px solid #eee;
+}
+
+.tabs li.active:last-child{
+    border-right: 1px solid #eee;
+}
+
+.tab-content-wrap{
+    width: 100%;
+    border: 1px solid #eee;    
+    margin-top: -1px;
+    overflow: hidden;
+    float: left;
+    padding: 30px;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.tabs li.active{
+    border-top: 2px solid #DA251D;
+}

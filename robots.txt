@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /asoplcv3/
+
+User-agent: *
+Disallow: /removepages/

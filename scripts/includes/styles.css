@@ -1,0 +1,147 @@
+* {
+	cursor: pointer;
+}
+A {
+	COLOR: #6b7b95; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #572d37
+}
+H1 {
+	BORDER-BOTTOM: 10px solid; PADDING-BOTTOM: 20px; TEXT-TRANSFORM: uppercase; MARGIN: 0px 0px 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #111; LETTER-SPACING: -1px; COLOR: #c17878; FONT-SIZE: 36px; PADDING-TOP: 20px
+}
+H3 {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 6px
+}
+H4 {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 6px
+}
+H5 {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 6px
+}
+H6 {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 6px
+}
+P {
+	LINE-HEIGHT: 1.5; MARGIN: 1em auto; COLOR: #333; CLEAR: both
+}
+HR {
+	DISPLAY: none
+}
+#contenter {
+	WIDTH: 500px;
+}
+#menu {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; PADDING-LEFT: 22px; PADDING-RIGHT: 22px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+#menu UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: square; PADDING-LEFT: 20px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#menu A {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; WHITE-SPACE: nowrap; FONT-SIZE: 14px; PADDING-TOP: 6px
+}
+#menu A:hover {
+	COLOR: #e79d35
+}
+#menu LI A {
+	FONT-WEIGHT: bold
+}
+#menu LI LI A {
+	FONT-WEIGHT: normal
+}
+#donate {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px
+}
+UL.sub {
+	LIST-STYLE-TYPE: none; MARGIN: 0px 0px 40px; LIST-STYLE-IMAGE: none
+}
+UL.sub LI {
+	FLOAT: left
+}
+UL.sub A {
+	BORDER-BOTTOM: solid; BORDER-LEFT: solid; PADDING-BOTTOM: 5px; MARGIN: 5px 5px 0px 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; BACKGROUND: #111; BORDER-TOP: solid; BORDER-RIGHT: solid; PADDING-TOP: 5px
+}
+UL.sub A:hover {
+	COLOR: #c17878
+}
+UL.list {
+	BORDER-BOTTOM: #888 1px solid; BORDER-LEFT: #888 1px solid; BORDER-TOP: #888 1px solid; BORDER-RIGHT: #888 1px solid
+}
+UL.list {
+	PADDING-BOTTOM: 5px; MARGIN: 6px 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+UL.list UL {
+	PADDING-BOTTOM: 5px; MARGIN: 6px 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+UL.list LI {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px
+}
+.half {
+	WIDTH: 49%; MARGIN-BOTTOM: 2%
+}
+.colAA {
+	WIDTH: 68%; MARGIN-BOTTOM: 2%
+}
+.colC {
+	WIDTH: 30%; MARGIN-BOTTOM: 2%
+}
+.left {
+	FLOAT: left
+}
+.right {
+	FLOAT: right
+}
+#listing {
+	
+}
+PRE {
+	BORDER-BOTTOM: #eee 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; BACKGROUND: #fff; FONT-SIZE: 12px; OVERFLOW: auto; BORDER-TOP: #eee 1px solid; PADDING-TOP: 5px
+}
+PRE {
+	MARGIN: 0px 0px 1em; WHITE-SPACE: pre
+}
+CODE {
+	MARGIN: 0px 0px 1em; WHITE-SPACE: pre
+}
+PRE {
+	FONT: 1em/1.5 "andale mono", "lucida console", monospace
+}
+CODE {
+	FONT: 1em/1.5 "andale mono", "lucida console", monospace
+}
+TT {
+	FONT: 1em/1.5 "andale mono", "lucida console", monospace
+}
+.kw1 {
+	COLOR: #1b609a
+}
+.kw2 {
+	COLOR: #9a6f1b
+}
+.me1 {
+	COLOR: #666
+}
+.kw3 {
+	COLOR: #784e0c
+}
+.re0 {
+	COLOR: #784e0c
+}
+.sc1 {
+	COLOR: #784e0c
+}
+.br0 {
+	COLOR: #444
+}
+.st0 {
+	COLOR: #489a1b
+}
+.co1 {
+	COLOR: #888
+}
+.coMULTI {
+	COLOR: #888
+}
+.nu0 {
+	COLOR: #70483d
+}

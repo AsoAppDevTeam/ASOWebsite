@@ -1,0 +1,10 @@
+To: "Your Name" <name@example.com>
+From: "{firstname} {lastname}" <{email}>
+Cc: carbon-copy@example.com
+Bcc: blind-carbon-copy@example.com, other-blind-carbon-copy@example.com
+MIME-Version: 1.0
+Content-type: text/plain; charset={txt_charset}
+Subject: {subject}
+
+{comment}
+

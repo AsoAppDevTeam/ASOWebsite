@@ -1,0 +1,50 @@
+To: "{name}" <{email}>
+From: "ASO Employee Relations" <careers@asoplc.com>
+MIME-Version: 1.0
+Content-type: text/plain; charset={txt_charset}
+Subject: Your Submission To ASO Savings & Loans
+
+Hello {name},
+
+Thank you for applying to ASO Savings and Loans PLC. 
+
+We have received your application and wish to let you know that your application is being considered. 
+
+We will get back to you in due course.
+
+This is your data:
+
+Name:  {name}
+Email:  {email}
+Address:  {address1}
+	   {address2}
+	   {city}, {state}
+Phone:  {phone}
+DOB:  {dob1} {dob2} {dob3}
+Sex: {sex}
+State of Origin:  {state1}
+Marital Status:  {status}
+Religion: {religion}
+
+Educational Information
+Secondary School:  {secondary}
+University:  {university}
+Course:  {course}
+Degree:  {degree}
+Qualification:  {qualify}
+
+Work Information
+Years of Experience:  {years}
+Experience
+  {experience1}
+  {experience2}
+  {experience3}
+  {experience4}
+  {experience5}
+Comment:  {comment2}
+
+
+Yours sincerely
+
+ASO Savings & Loans PLC.
+Employee Relations.

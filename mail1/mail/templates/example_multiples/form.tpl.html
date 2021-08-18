@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{txt_content_direction}">
+<head>
+  <title>{txt_script_name} {txt_script_version}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset={txt_charset}" />
+</head>
+
+<style type="text/css">
+<!--
+  body {
+      font-family:Arial,Helvetica,Geneva,Sans-serif,sans-serif;
+  }
+
+
+  p, td, br, form, div, span, blockquote {
+      font-family:Arial,Helvetica,Geneva,Sans-serif,sans-serif;
+      font-size:9pt;
+  }
+
+
+  .index {
+      font-weight:bold;
+  }
+
+
+  #poweredby {
+      text-align:center;
+      margin-top:30px;
+  }
+
+-->
+</style>
+
+<body>
+
+  <h4>{txt_script_name}</h4>
+
+
+  <!-- Display error messages (required fields etc.) -->
+  <LOOP NAME="message">
+    <blockquote style="color:#FF5F00;">
+      <p style="font-weight:bold;">{message}</p>
+      <blockquote>{fields}</blockquote>
+    </blockquote>
+  </LOOP NAME="message">
+
+
+  <!-- Display posted information -->
+  <LOOP NAME="display_data">
+
+    <table border="0" cellpadding="3" cellspacing="0">
+      <tr>
+        <td class="index">{txt_firstname}</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>{firstname}</td>
+      </tr>
+      <tr>
+        <td class="index">{txt_lastname}</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>{lastname}</td>
+      </tr>
+      <tr>
+        <td class="index">{txt_email}</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>{email}</td>
+      </tr>
+      <tr>
+        <td class="index">Fruits</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>{checkbox:fruits}</td>
+      </tr>
+      <tr>
+        <td class="index">Countries</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>{select:countries}</td>
+      </tr>
+      <tr>
+        <td class="index">{txt_subject}</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>{subject}</td>
+      </tr>
+      <tr valign="top">
+        <td class="index">{txt_comment}</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>{comment}</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </LOOP NAME="display_data">
+
+
+
+
+
+  <!-- Display form -->
+  <IF NAME="display_form">
+  <form action="{script_self}" method="post">
+    <input type="hidden" name="required_fields" value="lastname, email, subject" />
+    <input type="hidden" name="email_fields" value="email" />
+    <input type="hidden" name="html_template" value="form.tpl.html" />
+    <input type="hidden" name="mail_template" value="mail.tpl.txt" />
+    <!-- <input type="hidden" name="thanks" value="./docu/thanks.html" /> -->
+
+    <table border="0" cellpadding="3" cellspacing="0">
+      <tr>
+        <td>{txt_firstname}</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><input type="Text" name="firstname" value="{firstname}" size="40" /></td>
+      </tr>
+      <tr valign="bottom">
+        <td>{txt_lastname} *</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>
+          <input type="Text" name="lastname" value="{lastname}" size="40" />
+        </td>
+      </tr>
+      <tr valign="bottom">
+        <td>{txt_email} *</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>
+          <input type="Text" name="email" value="{email}" size="40" />
+        </td>
+      </tr>
+      
+    <tr>
+      <td>Fruits</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>
+        Choose at least 1 Fruit<br />
+        <input name="fruits[]" type="checkbox" value="Apple" {checkbox:fruits=Apple} /> Apple
+        <br />
+        <input name="fruits[]" type="checkbox" value="Pear" {checkbox:fruits=Pear} /> Pear
+        <br />
+        <input name="fruits[]" type="checkbox" value="Orange" {checkbox:fruits=Orange} /> Orange
+        <br />
+        <input name="fruits[]" type="checkbox" value="Cherry" {checkbox:fruits=Cherry} /> Cherry
+      </td>
+    </td>
+    
+    <tr>
+      <td>Nice Countries</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>
+        Choose at least 1 nice country<br />
+        <select name="countries[]" size="4" multiple="multiple">
+          <option value="US" {select:countries=US}>United States</option>
+          <option value="UK" {select:countries=UK}>United Kingdom</option>
+          <option value="DE" {select:countries=DE}>Germany</option>
+          <option value="FR" {select:countries=FR}>France</option>
+          <option value="ES" {select:countries=ES}>Spain</option>
+        </select>
+      </td>
+    </tr>      
+      
+      <tr>
+        <td valign="bottom">{txt_subject} *</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>
+          <input type="Text" name="subject" value="{subject}" size="40" />
+        </td>
+      </tr>
+      <tr valign="top">
+        <td>{txt_comment}</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><textarea name="comment" cols="30" rows="10">{comment}</textarea></td>
+      </tr>
+      <tr valign="top">
+        <td>&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>
+          <input type="submit" name="mode_preview" value="{txt_preview}" />&nbsp;&nbsp;
+          <input type="submit" name="send" value="{txt_submit}" />
+        </td>
+      </tr>
+    </table>
+
+
+
+  </form>
+  <p>* = {txt_mandatory_fields}</p>
+  </IF NAME="display_form">
+
+
+
+</body>
+</html>

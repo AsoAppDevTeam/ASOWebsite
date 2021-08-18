@@ -1,0 +1,20 @@
+To: "{firstname} {lastname}" <{email}>
+From: "Your Name" <you@example.com>
+MIME-Version: 1.0
+Content-type: text/plain; charset={txt_charset}
+Subject: Thanks for your E-mail
+
+Hello {firstname},
+
+Thanks for your e-mail. One of our staff member will contact you as soon as possible.
+
+This is your data:
+
+{subject}
+
+{comment}
+
+
+Yours sincerely
+
+XYZ Inc.

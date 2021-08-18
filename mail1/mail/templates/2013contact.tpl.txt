@@ -1,0 +1,37 @@
+To: "ASO Savings" <{subject}>
+From: "{name}" <{email}>
+Return-Path: fromasowebsite@asoplc.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset={txt_charset}
+Subject: ASO Contact Form Submission
+
+Sir/Madame,
+
+You have received a submission from the ASO Savings & Loans PLC Website.
+
+Details:
+
+Submitted from page:  ASO Online Contact Form
+
+Departmental Attention:	{subject}
+
+Sender's Information:
+
+Name:  
+{name}
+
+Email:  
+{email}
+
+Comment:  
+{comment}
+
+On which of these platforms did you first learn about ASO?
+{CheckboxGroup1}
+
+
+Message Information:
+----------------------------
+{env_year}-{env_month}-{env_day} ({env_hour}:{env_minute}:{env_second})
+
+{env_remote_address} ({env_remote_host})

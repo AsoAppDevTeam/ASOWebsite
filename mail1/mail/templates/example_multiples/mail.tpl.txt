@@ -1,0 +1,19 @@
+To: "Your Name" <you@example.com>
+From: "{firstname} {lastname}" <{email}>
+MIME-Version: 1.0
+Content-Type: text/plain; charset={txt_charset}
+Subject: {subject}
+
+{comment}
+
+Fruits:    {checkbox:fruits}
+Countries: {select:countries}
+
+
+
+----------------------------
+{env_year}-{env_month}-{env_day} ({env_hour}:{env_minute}:{env_second})
+
+{env_remote_address} ({env_remote_host})
+
+{env_user_agent}

@@ -1,2 +1,0 @@
-English: http://www.gentlesource.com/documentation/form-mail/
-German:  http://www.gentlesource.de/dokumentation/kontaktformular/

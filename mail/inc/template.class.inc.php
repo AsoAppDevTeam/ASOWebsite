@@ -118,7 +118,7 @@
 	** Function for parsing an array.
 	***************************************/
 		function parse_loop($file_id, $array_name){
-			global $$array_name;
+			global $array_name;
 			$loop_code = '';
 
 			$start_pos = strpos(strtolower($this->files[$file_id]), '<loop name="'.$array_name.'">') + strlen('<loop name="'.$array_name.'">');
@@ -131,7 +131,8 @@
 
 			if($loop_code != ''){
 				$new_code = '';
-				for($i=0; $i<strlen($$array_name); $i++){
+				//print_r($array_name);
+				for($i=0; $i < count($array_name); $i++){
 					$temp_code = $loop_code;
 					while(list($key,) = each(${$array_name}[$i])){
 						$temp_code = str_replace($this->start.$key.$this->end,${$array_name}[$i][$key], $temp_code);

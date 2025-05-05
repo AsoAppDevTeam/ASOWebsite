@@ -398,6 +398,7 @@ ul.homeaccmenu span{float:right;}
 .ic_category{font-size:13px; font-weight:bold; letter-spacing:1px; padding:5px; margin:0px;}
 .ic_text {padding:0 5px; margin:-12px 0 5px 0; text-align:justify; font-size:11px;}
 .demo {float:left;}
+.board-grid {display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;}
 
 .teamprofile {width:470px;}
 .teampic {float:left; width:215px; height:250px;}

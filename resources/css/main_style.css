@@ -397,13 +397,7 @@ ul.homeaccmenu span{float:right;}
 .ic_caption{position:absolute; opacity:0.6; overflow:hidden; margin:0px; padding:0px; left:0px; right:0px; cursor:default; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);}
 .ic_category{font-size:13px; font-weight:bold; letter-spacing:1px; padding:5px; margin:0px;}
 .ic_text {padding:0 5px; margin:-12px 0 5px 0; text-align:justify; font-size:11px;}
-.demo {float:left; display: inline-block;
-  margin: 10px;
-  border: 1px solid #ccc; /* Light gray border between items */
-  padding: 5px;
-  border-radius: 8px; /* Optional rounded corners */
-  background-color: #fff; /* Optional: to make images pop */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Optional subtle shadow *}
+.demo {float:left;}
 
 
 .teamprofile {width:470px;}

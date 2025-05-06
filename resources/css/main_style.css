@@ -392,11 +392,7 @@ ul.homeaccmenu ul ul li a {color:#9797A6; padding-left:20px;}
 ul.homeaccmenu ul ul li a:hover {color:#9797A6; font-weight:normal; text-decoration:underline; font-size:0.8em;}
 ul.homeaccmenu span{float:right;}
 
-.ic_container{vertical-align:baseline; position:relative; cursor:pointer;  border: 2px solid #ccc;
-  margin: 10px;
-  padding: 5px;
-  border-radius: 8px;
-  background-color: #fdfdfd;/*-moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; -moz-box-shadow: 0 1px 3px #888; -webkit-box-shadow: 0 1px 3px #888;*/}
+.ic_container{vertical-align:baseline; position:relative; cursor:pointer; /*-moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; -moz-box-shadow: 0 1px 3px #888; -webkit-box-shadow: 0 1px 3px #888;*/}
 .overlay{opacity:0.3; position:absolute; top:0px; bottom:0px; left:0px; right:0px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);}
 .ic_caption{position:absolute; opacity:0.6; overflow:hidden; margin:0px; padding:0px; left:0px; right:0px; cursor:default; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);}
 .ic_category{font-size:13px; font-weight:bold; letter-spacing:1px; padding:5px; margin:0px;}

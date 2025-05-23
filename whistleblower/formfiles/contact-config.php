@@ -36,7 +36,7 @@
 
 /* Email address where the messages should be delivered */
 
-$to = 'feedback.aso@gmail.com';
+$to = 'nobleugene66@gmail.com';
 
 /* This will be appended to the subject of contact form message */
 
